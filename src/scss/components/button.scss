@@ -1,0 +1,60 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: .35s;
+  //background-color: #fff;
+  //color: #5e5e5e;
+
+  &_main {
+    //background-color: $black;
+    //color: $white;
+    //font-weight: 700;
+    //font-size: 26px;
+    //line-height: 1;
+    //padding: 1.1em 1.65em;
+    //
+    //&:hover,
+    //&:focus {
+    //  color: $red;
+    //}
+  }
+}
+
+
+//@include respond-to($xl) {
+//  .btn_main{
+//    font-size: 18px;
+//  }
+//  .btn_play {
+//    font-size: 7px;
+//  }
+//}
+//
+//@include respond-to($lg) {
+//  .btn_main{
+//    font-size: 26px;
+//  }
+//}
+//
+//@include respond-to($md) {
+//  .btn_play {
+//    font-size: 4px;
+//  }
+//}
+//
+//@include respond-to($sm) {
+//  .btn_small {
+//    font-size: 14px;
+//  }
+//  .btn_play {
+//    font-size: 1.65px;
+//  }
+//}
+//
+//@include respond-to($xs){
+//  .btn_main{
+//    padding: 26px 22px;
+//    width: 100%;
+//  }
+//}

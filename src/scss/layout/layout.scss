@@ -1,0 +1,18 @@
+.main__title {
+  font-family: $main-font;
+  font-weight: 700;
+  max-width: 660px;
+  font-size: 64px;
+  line-height: .84;
+  text-align: center;
+  color: $white;
+  text-shadow: #14213D 1px 1px 0,
+  #14213D -1px -1px 0,
+  #14213D -1px 1px 0,
+  #14213D 1px -1px 0;
+
+  span {
+    font-size: 1.52em;
+  }
+
+}
