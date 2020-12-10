@@ -19,6 +19,16 @@
     //  color: $red;
     //}
   }
+  &_phone{
+    width: 52px;
+    height: 52px;
+    border: 1px solid #14213D;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 

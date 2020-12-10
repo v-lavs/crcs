@@ -1,32 +1,30 @@
-.wrapper{
+.wrapper {
   width: 100%;
-  overflow: hidden;
-  max-width: 1600px;
-  padding: 0 15px;
-  margin: 0 auto;
   position: relative;
-  }
+}
 
-.container{
+.container {
   width: 100%;
-
-  @include respond-to($xxl){
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include respond-to($xxl) {
     //max-width: 1400px;
   }
-  @include respond-to($xl){
+  @include respond-to($xl) {
     //max-width: 1180px;
   }
-  @include respond-to($lg){
+  @include respond-to($lg) {
     //max-width: 800px;
   }
-  @include respond-to($md){
+  @include respond-to($md) {
 
     //max-width: 670px;
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
     //max-width: 420px;
   }
-  @include respond-to($xs){
+  @include respond-to($xs) {
     //max-width: 300px;
   }
 }

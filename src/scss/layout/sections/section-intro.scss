@@ -1,6 +1,7 @@
 .section-intro {
-  padding-top: 65px;
-  min-height: 800px;
+  padding-top: 6.25%;
+  overflow: hidden;
+  padding-bottom: 7%;
 
   .mouse-parallax {
     position: relative;
@@ -10,33 +11,49 @@
   .mouse-parallax__bg,
   .mouse-parallax__bg-2 {
     position: absolute;
-    width: 130%;
-    height: 130%;
+    width: 105%;
+    height: 105%;
     pointer-events: none;
     z-index: -1;
+  }
 
+  .mouse-parallax__img {
+    position: absolute;
+    width: auto;
+    height: 640px;
+
+    &:nth-child(2) {
+      right: 0;
+    }
+
+  }
+
+  .mouse-parallax__bg-2 {
     .mouse-parallax__img {
-      position: absolute;
-      width: auto;
+      height: 690px;
     }
   }
-  .mouse-parallax__content{
 
-    padding-top: 100px;
-    padding-bottom: 117px;
+  .mouse-parallax__content {
+    padding-top: 50px;
+    padding-bottom: 57px;
   }
+
   .block-img {
     position: relative;
     width: 85%;
     margin: auto;
     text-align: center;
   }
-  .main__title{
+
+  .main__title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    width: 100%;
+    max-width: 660px;
   }
 
   @include respond-to($xl) {
@@ -49,7 +66,7 @@
   0% {
     transform: scale(0.5) rotate(0);
     opacity: 0;
-   }
+  }
   100% {
     transform: scale(1) rotate(-35deg);
     opacity: 1;
@@ -61,39 +78,39 @@
 }
 
 @keyframes rotate-bg {
-   0% {
-     transform:  rotate(0);
-     opacity: 0;
-   }
-   40% {
-     opacity: .5;
-   }
-   100% {
-     transform:  rotate(7deg);
-     opacity: 1;
-   }
- }
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: .5;
+  }
+  100% {
+    transform: rotate(7deg);
+    opacity: 1;
+  }
+}
 
 .rotate-bg {
-  animation: rotate-bg  3.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: rotate-bg 3.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 }
 
 @keyframes rotate-bg_blur {
   0% {
-    transform:  rotate(7deg);
+    transform: rotate(7deg);
     opacity: 0;
   }
   60% {
     opacity: .5;
   }
   100% {
-    transform:  rotate(-4deg);
+    transform: rotate(-4deg);
     opacity: 1;
   }
 }
 
 .rotate-bg_blur {
-  animation: rotate-bg_blur  3.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: rotate-bg_blur 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 }
 
 @keyframes show-title {
@@ -106,5 +123,5 @@
 }
 
 .show-title {
-  animation: show-title  3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+  animation: show-title 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
 }

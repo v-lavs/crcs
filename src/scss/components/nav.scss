@@ -1,34 +1,19 @@
 .menu {
   display: flex;
-  //color: $dark;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-right: 13%;
 
   &__item {
-
-    &:first-child {
-      margin-left: 0;
-    }
+    margin: 0 30px;
   }
 
   &__link {
     display: inline-block;
-    transition: .35s;
-
+    transition: text-shadow .25s;
     &:hover,
     &:focus {
-      //text-decoration: underline;
+      text-shadow: 0 0 .65px #14213D, 0 0 .65px #14213D, 0 0 .65px #14213D;
     }
   }
-
-  @include respond-to($lg) {
-   header .menu__item {
-
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-  @include respond-to($sm){
-
-   }
 }
