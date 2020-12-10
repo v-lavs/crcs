@@ -48,12 +48,12 @@ $(document).ready(function () {
 
         $activeSection.find('.mouse-parallax__bg').css(
             'transform',
-            'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)',
+            'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)',
 
         );
         $activeSection.find('.mouse-parallax__bg-2').css(
             'transform',
-            'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)',
+            'translate(+' + x * 30 + 'px, +' + y * 30 + 'px)',
         );
     });
 
