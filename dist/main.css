@@ -208,6 +208,10 @@ body {
   height: 690px;
 }
 
+.section-intro .wrap-parallax-bg {
+  position: relative;
+}
+
 .section-intro .mouse-parallax__content {
   padding-top: 50px;
   padding-bottom: 57px;
@@ -243,7 +247,7 @@ body {
 }
 
 .scale-up-center {
-  animation: scale-up-center 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @keyframes rotate-bg {
@@ -252,7 +256,7 @@ body {
     opacity: 0;
   }
 
-  40% {
+  30% {
     opacity: .5;
   }
 
@@ -263,7 +267,7 @@ body {
 }
 
 .rotate-bg {
-  animation: rotate-bg 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: rotate-bg 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
 }
 
 @keyframes rotate-bg_blur {
@@ -283,7 +287,7 @@ body {
 }
 
 .rotate-bg_blur {
-  animation: rotate-bg_blur 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: rotate-bg_blur 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
 }
 
 @keyframes show-title {
@@ -297,7 +301,7 @@ body {
 }
 
 .show-title {
-  animation: show-title 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s both;
+  animation: show-title 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
 }
 
 .wrapper {
