@@ -1,5 +1,47 @@
 .footer {
+  padding: 58px 0;
+  background-color: #14213D;
+  color: $white;
+  font-size: 16px;
+  &__logo{
+    max-width: 80px;
+    display: inline-block;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .social-list__item{
+    display: inline-block;
+    margin-left: 24px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .social-list__link{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .contacts__link{
+    margin-left: 30px;
+    &:first-child{
+      margin-left: 0;
+    }
+    svg{
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 24px;
+    }
+  }
 
   @include respond-to($lg) {
 

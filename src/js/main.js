@@ -25,21 +25,6 @@ $(document).ready(function () {
     });
 
 
-    //HEADER SCROLL
-
-    function onHeaderScrol() {
-        scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrolled > 40) {
-            jQuery(".header").addClass('header_active');
-        } else {
-            jQuery(".header").removeClass('header_active');
-        }
-    }
-
-    $(document).on('scroll', function () {
-        onHeaderScrol()
-    });
-
 //MOUSE-PARALLAX
     $('.mouse-parallax').on('mousemove', (e) => {
         const x = e.clientX / $(window).width();

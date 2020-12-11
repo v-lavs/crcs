@@ -1,0 +1,49 @@
+.section-partners {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  .title {
+    margin-bottom: 120px;
+  }
+
+  .partners-name {
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity .8s;
+  }
+
+  .partners-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+      opacity: .52;
+      transition: opacity .5s;
+          }
+
+    &__item {
+      width: 20%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    &__link {
+      display: block;
+
+      &:hover,
+      &:focus {
+        .partners-list__img,
+        .partners-name {
+          opacity: 1;
+        }
+      }
+    }
+
+    .wrap-img {
+      margin: 0 auto 20px;
+      height: 64px;
+    }
+  }
+}

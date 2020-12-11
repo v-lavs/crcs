@@ -1,17 +1,17 @@
-.heading {
-  font-weight: 900;
-
-  //&_big {
-  //  font-size: 120px;
-  //}
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  &_big {
+    font-size: 72px;
+  }
   //
   //&_xl {
   //  font-size: 70px;
   //}
   //
-  //&_lg {
-  //  font-size: 44px;
-  //}
+  &_middle {
+    font-size: 52px;
+  }
   //
   //@include respond-to($xxl) {
   //  &_big {

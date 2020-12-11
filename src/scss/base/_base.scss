@@ -7,6 +7,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font: 400 16px $main-font;
+  color: #14213D;
 }
 
 .hide {
@@ -20,6 +21,14 @@ body {
   border: 0;
 }
 
+.color-red{
+  color: #A21E1A;
+}
+
+.sub-title{
+  font-size: 24px;
+  font-weight: 700;
+}
 
 
 

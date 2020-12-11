@@ -3,16 +3,17 @@
   cursor: pointer;
   text-align: center;
   transition: .35s;
-  //background-color: #fff;
-  //color: #5e5e5e;
 
   &_main {
-    //background-color: $black;
-    //color: $white;
-    //font-weight: 700;
-    //font-size: 26px;
-    //line-height: 1;
-    //padding: 1.1em 1.65em;
+    background-color: #1D3557;
+    border-radius: 8px;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    padding: .85em;
+    min-width: 160px;
     //
     //&:hover,
     //&:focus {
