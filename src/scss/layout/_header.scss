@@ -70,20 +70,9 @@
   }
 
   .btn-close {
-    position: absolute;
+    display: none;
     right: 20px;
     top: 37px;
-    border: none;
-    background-color: transparent;
-    display: none;
-    background-image: url(../assets/img/svg/close.svg);
-    width: 24px;
-    height: 24px;
-    padding: 6px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    background-size: cover;
   }
 
 

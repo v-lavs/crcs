@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font: 400 16px $main-font;
   color: #14213D;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .hide {

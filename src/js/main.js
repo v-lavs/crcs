@@ -34,12 +34,29 @@ $(document).ready(function () {
         $activeSection.find('.mouse-parallax__bg').css(
             'transform',
             'translate(-' + x * 40 + 'px, -' + y * 40 + 'px)',
-
         );
         $activeSection.find('.mouse-parallax__bg-2').css(
             'transform',
             'translate(+' + x * 40 + 'px, +' + y * 40 + 'px)',
         );
     });
+    // POPUP
+    $("#popupTrigger").click(function (e) {
+        e.preventDefault();
+        $("#popup").addClass("modal_active");
+        $("#overlay").fadeIn();
+        $(".mouse-parallax__bg").addClass("rotate-back_blur");
+        $(".mouse-parallax__bg-2").addClass("rotate-back");
+        $(".img-intro").addClass("rotate-back");
+        // $("body").addClass("modal-open");
+    });
 
+    $("#closePopup,  #overlay").click(function () {
+        $("#popup").removeClass("modal_active");
+        $("#overlay").fadeOut();
+        $(".mouse-parallax__bg").removeClass("rotate-back_blur");
+        $(".mouse-parallax__bg-2").removeClass("rotate-back");
+        $(".img-intro").removeClass("rotate-back");
+        // $("body").removeClass("modal-open");
+    });
 });
