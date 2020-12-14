@@ -1,15 +1,33 @@
 .form{
+  font-size: 16px;
   .label{
     font-weight: 600;
     font-size: 16px;
     color: #14213D;
     display: block;
+    margin-bottom: 38px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
   }
   .input{
     display: block;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CDCDCD;
+    line-height: 1.9;
+    padding: 5px 10px 5px 0;
+  }
+  ::placeholder{
+    color: #CDCDCD;
   }
   .star{
       color: #FE5F5F;
     font-size: 18px;
+  }
+  &__footer{
+    text-align: center;
   }
 }

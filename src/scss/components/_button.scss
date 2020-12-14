@@ -3,10 +3,11 @@
   cursor: pointer;
   text-align: center;
   transition: .35s;
-
+  border: 2px solid;
   &_main {
     background-color: #1D3557;
     border-radius: 8px;
+    border-color: #1D3557;
     color: $white;
     font-weight: 700;
     font-size: 16px;
@@ -19,6 +20,15 @@
     //&:focus {
     //  color: $red;
     //}
+  }
+  &_border{
+    background-color: transparent;
+    border-color: #FFFFFF;
+  }
+  &_light{
+    background-color: #fff;
+    border-color: $white;
+    color: #1D3557;
   }
   &_phone{
     width: 52px;
