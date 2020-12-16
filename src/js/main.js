@@ -24,6 +24,21 @@ $(document).ready(function () {
         jQuery('.backdrop').fadeOut();
     });
 
+    //HEADER SCROLL
+    var header = $('.header'),
+        scrollPrev = 0;
+
+    $(window).scroll(function() {
+        var scrolled = $(window).scrollTop();
+
+        if ( scrolled > 100 && scrolled > scrollPrev ) {
+            header.addClass('header_active');
+        } else {
+            header.removeClass('header_active');
+        }
+        scrollPrev = scrolled;
+    });
+
 
 //MOUSE-PARALLAX
     $('.mouse-parallax').on('mousemove', (e) => {

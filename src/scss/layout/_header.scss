@@ -7,8 +7,20 @@
   font-size: 14px;
   line-height: 1.28;
   color: #14213D;
-  border-bottom: 1px solid #14213D;
-  transition: height .35s ease-in;
+  transition: .5s ease-in;
+  &:after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 1px;
+    background-color: #14213D;
+  }
+  &.header_active{
+    transform: translateY(-100%);
+  }
 
   .container {
     display: flex;
