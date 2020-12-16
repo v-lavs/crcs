@@ -1,5 +1,88 @@
 .section-about {
+  padding-top: 10px;
 
+  .container {
+    display: flex;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: right -69% bottom;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .section__content {
+    width: 60%;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-bottom: 145px;
+  }
+
+  .section__text {
+    position: relative;
+    z-index: 1;
+    color: #1D3557;
+    font-size: 18px;
+    padding-left: 34px;
+    line-height: 1.75;
+
+    p {
+      margin-bottom: .7em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .decor {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: #f5f5f5;
+      width: 373px;
+      height: 215px;
+      top: -35%;
+      left: -28%;
+      z-index: -1;
+    }
+
+  }
+
+  .section__thumb {
+    position: relative;
+    width: 40%;
+    padding-left: 4%;
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: #F5E7FF;
+      width: 490px;
+      height: 490px;
+      border-radius: 50%;
+      top: 21%;
+      left: 29%;
+      z-index: -1;
+    }  }
+
+
+  .img-about {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    max-width: initial;
+
+
+  }
 
   @include respond-to($xl) {
 
@@ -7,13 +90,13 @@
   @include respond-to($lg) {
 
   }
-  @include respond-to($md){
+  @include respond-to($md) {
 
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
 
   }
-  @include respond-to($xs){
+  @include respond-to($xs) {
 
   }
 }
