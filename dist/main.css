@@ -367,6 +367,89 @@ body.modal-open {
   text-align: center;
 }
 
+.modal_franchise {
+  max-width: 1096px;
+  width: 75%;
+  padding: 24px 53px 60px 70px;
+}
+
+.modal_franchise .btn-close {
+  right: 58px;
+  left: auto;
+  z-index: 1;
+}
+
+.modal_franchise .modal__heading {
+  font-size: 32px;
+  margin-bottom: 36px;
+  line-height: 2;
+}
+
+.modal_franchise .border-decor {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.modal_franchise .border-decor:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, rgba(20, 33, 61, 0), #14213d, rgba(20, 33, 61, 0));
+  width: 150px;
+  height: 1px;
+  z-index: 2;
+}
+
+.modal_franchise .modal__body {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: initial;
+  background-color: #fff;
+}
+
+.modal_franchise .card-franchise {
+  width: 192px;
+  padding: 0 26px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modal_franchise .card-franchise__icon-bg {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #14213D;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-position: center center;
+  position: relative;
+  padding: 5px;
+}
+
+.modal_franchise .card-franchise__icon-bg:before {
+  position: absolute;
+  content: '';
+  background-image: url(../assets/img/svg/arrow.svg);
+  width: 56px;
+  height: 12px;
+  right: -53%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.modal_franchise .card-franchise:nth-of-type(n+6) .card-franchise__icon-bg:before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .form {
   font-size: 16px;
 }
@@ -942,7 +1025,7 @@ body.modal-open {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 450;
   background-color: #FFFFFF;
   font-size: 14px;
   line-height: 1.28;

@@ -63,7 +63,7 @@
                 <span class="line"></span>
             </button>
         </div>
-        <div class="backdrop" id="overlay"></div>
+
     </header>
 
     <main class="main">
@@ -90,9 +90,10 @@
                     </div>
                 </div>
             </div>
+            <div id="about"></div>
         </section>
 
-        <section class="section section-about" id="about">
+        <section class="section section-about">
             <div class="container" style="background-image: url(assets/img/bg-about.png);">
                 <div class="section__content">
                     <h2 class="title title_big decor">Крокус</h2>
@@ -280,7 +281,7 @@
             <h2 class="title title_big"><span class="color-red">Франшиза</span> «Crocus»</h2>
             <div class="sub-title">Made in Ukraine</div>
             <div class="wrap-btn">
-                <button class="btn btn_main">Детальніше</button>
+                <button class="btn btn_main" id="franchiseTrigger">Детальніше</button>
             </div>
         </section>
 
@@ -396,6 +397,7 @@
         </div>
     </footer>
 </div>
+<div class="backdrop" id="overlay"></div>
 <div class="modal" id="popup">
     <div class="modal__header">
         <button class="btn-close btn-close_round" aria-label="Закрити" id="closePopup"></button>
@@ -426,7 +428,64 @@
         </div>
     </div>
 </div>
+<div class="modal modal_franchise" id="franchisePopup">
+    <div class="modal__header">
+        <button class="btn-close btn-close_round" aria-label="Закрити" id="closeFranchisePopup"></button>
+        <h3 class="modal__heading border-decor">Замовити дзвінок</h3>
+    </div>
+    <div class="modal__body">
+        <div class="card-franchise">
+           <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/ground.svg);"></div>
+            <div class="card-franchise__title">Підготовка землі</div>
+        </div>
 
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/analysis.svg);"></div>
+            <div class="card-franchise__title">Аналіз ґрунту</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/calculations.svg);"></div>
+            <div class="card-franchise__title">Здійснення розрахунків</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/contract.svg);"></div>
+            <div class="card-franchise__title">Підписання договору</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/planting-materials.svg);"></div>
+            <div class="card-franchise__title">Забезпечення посадковими матеріалами</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/sale.svg);"></div>
+            <div class="card-franchise__title">Продаж продукції</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/conducting-analysis.svg);"></div>
+            <div class="card-franchise__title">Проведення аналізу</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/harvesting.svg);"></div>
+            <div class="card-franchise__title">Здійснення збору та вибірка врожаю</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/instruction.svg);"></div>
+            <div class="card-franchise__title">Інструктаж по збору та сушці</div>
+        </div>
+
+        <div class="card-franchise">
+            <div class="card-franchise__icon-bg" style="background-image: url(assets/img/svg/cultivation.svg);"></div>
+            <div class="card-franchise__title">Вирощування шафрану</div>
+        </div>
+
+    </div>
+</div>
 <script src="dist/main.js"></script>
 </body>
 </html>
