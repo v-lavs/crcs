@@ -32,6 +32,8 @@
   }
 
   .language-nav{
+    display: flex;
+    align-items: center;
     &__link{
       display: inline-block;
       margin-left: 10px;
@@ -55,6 +57,7 @@
     width: 24px;
     height: 24px;
     padding: 3px;
+    margin-left: 40px;
 
     .line {
       display: block;
@@ -80,6 +83,9 @@
     .btn-close,
     .btn-burger {
       display: block;
+    }
+    .btn_phone{
+      margin-left: auto;
     }
     .header__nav {
       padding: 140px 20px 150px;
@@ -108,7 +114,7 @@
         margin-right: 0;
         &__item {
           margin-bottom: 25px;
-          margin-left: 0;
+          margin-right: 0;
 
           &:last-child {
             margin-bottom: 0;

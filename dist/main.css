@@ -195,10 +195,23 @@ body.modal-open {
   border-color: #FFFFFF;
 }
 
-.btn_light {
+.btn_border:hover,
+.btn_border:focus {
+  color: #1D3557;
+  border-color: #1D3557;
+}
+
+.btn_primary {
   background-color: #fff;
   border-color: #FFFFFF;
   color: #1D3557;
+}
+
+.btn_primary:hover,
+.btn_primary:focus {
+  background-color: #2C5691;
+  color: #FFFFFF;
+  border-color: #2C5691;
 }
 
 .btn_phone {
@@ -210,6 +223,19 @@ body.modal-open {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 10px rgba(29, 53, 87, 0.25);
+}
+
+.btn_phone:hover {
+  background: #2C5690;
+}
+
+.btn_phone:hover .phone {
+  fill: #ffffff;
+}
+
+.btn_phone:hover .phone path {
+  stroke: #2C5690;
 }
 
 .btn-close {
@@ -259,7 +285,7 @@ body.modal-open {
   background-color: #14213D;
   bottom: -85%;
   z-index: 2;
-  transition: .35s;
+  transition: .25s;
 }
 
 .menu__link:hover,
@@ -925,6 +951,11 @@ body.modal-open {
   display: block;
 }
 
+.header .language-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header .language-nav__link {
   display: inline-block;
   margin-left: 10px;
@@ -949,6 +980,7 @@ body.modal-open {
   width: 24px;
   height: 24px;
   padding: 3px;
+  margin-left: 40px;
 }
 
 .header .btn-burger .line {
@@ -1085,6 +1117,10 @@ body.modal-open {
     display: block;
   }
 
+  .header .btn_phone {
+    margin-left: auto;
+  }
+
   .header .header__nav {
     padding: 140px 20px 150px;
     position: fixed;
@@ -1115,7 +1151,7 @@ body.modal-open {
 
   .header .header__nav .menu__item {
     margin-bottom: 25px;
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .header .header__nav .menu__item:last-child {
