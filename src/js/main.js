@@ -59,4 +59,12 @@ $(document).ready(function () {
         $(".img-intro").removeClass("rotate-back");
         // $("body").removeClass("modal-open");
     });
+
+    var openBlock = $('#openText');
+
+    $('.section-buy .open-info').on('click', function (e) {
+        e.preventDefault();
+        openBlock.addClass('open');
+
+    });
 });

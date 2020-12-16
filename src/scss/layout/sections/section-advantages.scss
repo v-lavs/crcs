@@ -11,8 +11,7 @@
   }
 
   .advantages__item {
-    width: 22%;
-    flex-basis: 240px;
+    max-width: 240px;
   }
 
   .wrap-thumb {
@@ -37,17 +36,15 @@
     font-weight: 600;
     line-height: 1.2;
     padding: 0 5px;
-    //width: 50%;
   }
   .advantages__counter-number {
-    position: relative;
     font-size: 140px;
     font-weight: 700;
     line-height: .8;
     color: $white;
-    text-shadow: #14213D 2px 2px 0, #14213D -2px -2px 0, #14213D -2px 2px 0, #14213D 2px -2px 0;
+    text-shadow: #14213D 1px 1px 0, #14213D -1px -1px 0, #14213D -1px 1px 0, #14213D 1px -1px 0;
+    -webkit-text-stroke: 2px #14213D;
     opacity: .1;
-    z-index: 1;
     width: 50%;
     padding: 0 5px;
   }
