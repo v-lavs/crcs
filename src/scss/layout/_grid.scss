@@ -7,13 +7,13 @@
 
   }
   @include respond-to($xl) {
-
+    max-width: 1130px;
   }
   @include respond-to($lg) {
-
+    max-width: 1080px;
   }
   @include respond-to($md) {
-
+    max-width: 680px;
   }
   @include respond-to($sm) {
     width: 100%;

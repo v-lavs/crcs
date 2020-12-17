@@ -29,7 +29,8 @@
     }
     &:hover,
     &:focus {
-      text-shadow: 0 0 .65px #14213D, 0 0 .65px #14213D, 0 0 .65px #14213D;
+      //text-shadow: 0 0 .65px #14213D, 0 0 .65px #14213D, 0 0 .65px #14213D;
+      -webkit-text-stroke: .5px #14213D;
       &:after{
         transform: translateX(-50%) scale(1);
         width: 50px;

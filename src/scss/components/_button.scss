@@ -4,6 +4,7 @@
   text-align: center;
   transition: .35s;
   border: 2px solid;
+  font-family: $main-font;
 
   &_main {
     background-color: #1D3557;
@@ -16,11 +17,12 @@
     letter-spacing: 0.2px;
     padding: .85em;
     min-width: 160px;
-    //
-    //&:hover,
-    //&:focus {
-    //  color: $red;
-    //}
+
+    &:hover,
+    &:focus {
+    background-color: #2C5691;
+    border-color: #2C5691;
+    }
   }
 
   &_border {
@@ -31,6 +33,8 @@
     &:focus {
       color: #1D3557;
       border-color: #1D3557;
+      background-color: rgba(255,255,255, .5);
+      border-color: rgba(255,255,255, .5);
     }
   }
 
@@ -89,40 +93,3 @@
     border-radius: 50%;
   }
 }
-
-//@include respond-to($xl) {
-//  .btn_main{
-//    font-size: 18px;
-//  }
-//  .btn_play {
-//    font-size: 7px;
-//  }
-//}
-//
-//@include respond-to($lg) {
-//  .btn_main{
-//    font-size: 26px;
-//  }
-//}
-//
-//@include respond-to($md) {
-//  .btn_play {
-//    font-size: 4px;
-//  }
-//}
-//
-//@include respond-to($sm) {
-//  .btn_small {
-//    font-size: 14px;
-//  }
-//  .btn_play {
-//    font-size: 1.65px;
-//  }
-//}
-//
-//@include respond-to($xs){
-//  .btn_main{
-//    padding: 26px 22px;
-//    width: 100%;
-//  }
-//}

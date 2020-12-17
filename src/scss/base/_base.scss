@@ -9,10 +9,14 @@
 body {
   font: 400 16px $main-font;
   color: #14213D;
+
   &.modal-open {
     overflow: hidden;
   }
 
+  @include respond-to($xs) {
+    font-size: 14px;
+  }
 }
 
 .hide {
@@ -26,18 +30,18 @@ body {
   border: 0;
 }
 
-.color-red{
+.color-red {
   color: #A21E1A;
 }
 
-.sub-title{
+.sub-title {
   font-size: 24px;
   font-weight: 700;
 }
 
 
-.dynamic-content{
-  p{
+.dynamic-content {
+  p {
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 1.25em;
@@ -45,8 +49,20 @@ body {
 
 }
 
+.simplebar-track.simplebar-vertical {
+  -webkit-box-shadow: inset 0 0 4px rgba(29, 53, 83, .2);
+  border-radius: 4px;
+  width: 8px;
+}
 
+.simplebar-scrollbar.simplebar-visible:before {
+  border-radius: 4px;
+  background-color: $white;
+  -webkit-box-shadow: inset 0 0 6px rgba(29, 53, 83, .8);
 
+  left: 0;
+  right: 0;
+}
 
 
 

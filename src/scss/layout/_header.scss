@@ -58,7 +58,8 @@
       }
 
       &.language_active {
-        text-shadow: 0 0 .65px #14213D, 0 0 .65px #14213D, 0 0 .65px #14213D;
+        //text-shadow: 0 0 .65px #14213D, 0 0 .65px #14213D, 0 0 .65px #14213D;
+        -webkit-text-stroke: .5px #14213D;
       }
     }
   }

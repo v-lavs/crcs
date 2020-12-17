@@ -41,4 +41,20 @@
     align-items: center;
     z-index: 2;
   }
+
+  @include respond-to($md) {
+    .wrap-logo {
+      flex-direction: column;
+    }
+    .aside__logo {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  @include respond-to($sm) {
+    .wrap-logo {
+      width: 70%;
+      text-align: center;
+    }
+  }
 }
