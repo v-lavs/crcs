@@ -437,9 +437,9 @@ body.modal-open {
   position: relative;
   max-width: 192px;
   width: 20%;
-  padding: 0 26px;
+  flex-shrink: 0;
+  padding: 0 26px 32px;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .modal_franchise .card-franchise:before {
@@ -449,7 +449,7 @@ body.modal-open {
   width: 56px;
   height: 12px;
   right: -30px;
-  top: 60px;
+  top: 59px;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: 100%;
@@ -475,9 +475,14 @@ body.modal-open {
 }
 
 .modal_franchise .card-franchise:nth-of-type(5):before {
-  background-image: url(../assets/img/svg/arrow2.svg);
-  height: 237px;
+  right: -26px;
+  top: 61px;
+  background-image: none;
+  height: 100%;
   width: 45px;
+  border: 3px solid #14213D;
+  border-left: none;
+  border-bottom: none;
 }
 
 .form {
@@ -867,21 +872,32 @@ body.modal-open {
 }
 
 .section-buy {
+  position: relative;
   color: #FFFFFF;
   overflow: hidden;
   width: 100%;
   display: flex;
-  position: relative;
   min-height: 800px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 120%;
-  transition: background-size .35s;
+  padding-bottom: 115px;
 }
 
-.section-buy.open-block {
-  transition: background-size .35s;
-  background-size: 110%;
+.section-buy .section__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: scale(1.2);
+  background-size: cover;
+  transition: transform 0.3s linear;
+  transform-origin: 0 50%;
+  z-index: 1;
+}
+
+.section-buy.open-block .section__bg {
+  transform: scale(1);
 }
 
 .section-buy:before {
@@ -891,22 +907,22 @@ body.modal-open {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   background-image: linear-gradient(180deg, rgba(29, 53, 87, 0) 43%, rgba(29, 53, 87, 0.9) 100%);
 }
 
 .section-buy .container {
+  position: relative;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 116px;
+  z-index: 2;
 }
 
 .section-buy .section__content {
   position: relative;
   max-width: 600px;
-  width: 50%;
-  z-index: 2;
+  width: 100%;
 }
 
 .section-buy .btn {
@@ -947,9 +963,9 @@ body.modal-open {
   padding: 48px 58px 119px 58px;
   overflow: hidden;
   background-color: #FFFFFF;
-  z-index: 2;
-  transition: .35s;
+  transition: transform 0.3s linear;
   color: #14213D;
+  z-index: 1000;
 }
 
 .section-buy .info.open {
@@ -995,11 +1011,11 @@ body.modal-open {
   overflow: auto;
 }
 
-.section-buy .info-form .info__body {
+.section-buy .drawer-form .info__body {
   height: 100%;
 }
 
-.section-buy .info-form .form {
+.section-buy .drawer-form .form {
   padding-bottom: 119px;
   height: 100%;
   display: flex;
@@ -1097,12 +1113,12 @@ body.modal-open {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 450;
+  z-index: 550;
   background-color: #FFFFFF;
   font-size: 14px;
   line-height: 1.28;
   color: #14213D;
-  transition: .5s ease-in;
+  transition: .35s linear;
 }
 
 .header:after {
@@ -1328,7 +1344,8 @@ body.modal-open {
 
   .modal_franchise .card-franchise {
     width: 20%;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .modal_franchise .card-franchise:before {
@@ -1444,7 +1461,9 @@ body.modal-open {
   }
 
   .container {
-    max-width: 680px;
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .header .btn-close,
@@ -1528,9 +1547,8 @@ body.modal-open {
     font-size: 34px;
   }
 
-  .container {
-    width: 100%;
-    padding: 0 20px;
+  .section-franchise {
+    padding: 55px 0 65px;
   }
 
   .aside {
@@ -1542,7 +1560,7 @@ body.modal-open {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 580px) {
   body {
     font-size: 14px;
   }
@@ -1567,6 +1585,43 @@ body.modal-open {
     font-size: 16px;
   }
 
+  .btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .btn_main {
+    min-width: 120px;
+    padding: 10px 20px;
+  }
+
+  .section-buy {
+    padding: 30px 0;
+    min-height: 320px;
+    overflow: visible;
+  }
+
+  .section-buy .section__bg {
+    transform: scale(1);
+  }
+
+  .section-buy .drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .section-buy .title {
+    padding-bottom: 10px;
+    margin: 0 0 15px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
   .main__title {
     font-size: 30px;
   }
@@ -1578,5 +1633,11 @@ body.modal-open {
   .aside .wrap-logo {
     width: 70%;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section-buy .title:before {
+    width: 100vw;
   }
 }
