@@ -2,12 +2,12 @@
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 450;
+  z-index: 550;
   background-color: $white;
   font-size: 14px;
   line-height: 1.28;
   color: #14213D;
-  transition: .5s ease-in;
+  transition: .35s linear;
 
   &:after {
     position: absolute;

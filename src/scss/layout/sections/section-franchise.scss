@@ -8,4 +8,7 @@
   .sub-title{
     margin-bottom: 42px;
   }
+  @include respond-to($sm) {
+    padding: 55px 0 65px;
+  }
 }

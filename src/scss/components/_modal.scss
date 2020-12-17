@@ -115,9 +115,9 @@
     position: relative;
     max-width: 192px;
     width: 20%;
-    padding: 0 26px;
+    flex-shrink: 0;
+    padding: 0 26px 32px;
     text-align: center;
-    margin-bottom: 32px;
 
     &:before {
       position: absolute;
@@ -126,7 +126,7 @@
       width: 56px;
       height: 12px;
       right: -30px;
-      top: 60px;
+      top: 59px;
       background-repeat: no-repeat;
       background-position: center center;
       -webkit-background-size: 100%;
@@ -159,9 +159,14 @@
     }
     &:nth-of-type(5) {
       &:before {
-        background-image:  url(../assets/img/svg/arrow2.svg);
-        height: 237px;
+        right: -26px;
+        top: 61px;
+        background-image: none;
+        height: 100%;
         width: 45px;
+        border: 3px solid #14213D;
+        border-left: none;
+        border-bottom: none;
       }
     }
   }
@@ -171,8 +176,8 @@
 
     .card-franchise {
       width: 20%;
-      padding: 0 10px;
-
+      padding-left: 10px;
+      padding-right: 10px;
       &:before {
         width: 40px;
         top: 30px;

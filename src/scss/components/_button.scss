@@ -93,3 +93,14 @@
     border-radius: 50%;
   }
 }
+
+@include respond-to($xs) {
+  .btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn_main {
+    min-width: 120px;
+    padding: 10px 20px;
+  }
+}
