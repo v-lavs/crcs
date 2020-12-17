@@ -114,6 +114,7 @@ a:hover {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 body {
@@ -369,7 +370,7 @@ body.modal-open {
 
 .modal_franchise {
   max-width: 1096px;
-  width: 75%;
+  width: 100%;
   padding: 24px 53px 60px 70px;
 }
 
@@ -411,43 +412,50 @@ body.modal-open {
 }
 
 .modal_franchise .card-franchise {
-  width: 192px;
+  position: relative;
+  max-width: 192px;
+  width: 20%;
   padding: 0 26px;
   text-align: center;
   margin-bottom: 32px;
 }
 
-.modal_franchise .card-franchise__icon-bg {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background-color: #14213D;
-  background-repeat: no-repeat;
-  -webkit-background-size: auto;
-  background-size: auto;
-  background-position: center center;
-  position: relative;
-  padding: 5px;
-}
-
-.modal_franchise .card-franchise__icon-bg:before {
+.modal_franchise .card-franchise:before {
   position: absolute;
   content: '';
   background-image: url(../assets/img/svg/arrow.svg);
   width: 56px;
   height: 12px;
-  right: -53%;
-  top: 50%;
-  transform: translateY(-50%);
+  right: -30px;
+  top: 60px;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 
-.modal_franchise .card-franchise:nth-of-type(n+6) .card-franchise__icon-bg:before {
-  transform: translateY(-50%) rotate(180deg);
+.modal_franchise .card-franchise__icon-bg {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #14213D;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-position: center center;
+  padding: 5px;
+}
+
+.modal_franchise .card-franchise:nth-of-type(n+6):before {
+  transform: rotate(180deg);
+  right: -26px;
+}
+
+.modal_franchise .card-franchise:nth-of-type(5):before {
+  background-image: url(../assets/img/svg/arrow2.svg);
+  height: 237px;
+  width: 45px;
 }
 
 .form {
@@ -1229,6 +1237,30 @@ body.modal-open {
   margin-right: 24px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .modal_franchise {
+    max-width: 900px;
+  }
+
+  .modal_franchise .card-franchise {
+    width: 20%;
+    padding: 0 10px;
+  }
+
+  .modal_franchise .card-franchise:before {
+    width: 40px;
+    top: 30px;
+    right: -20px;
+  }
+
+  .modal_franchise .card-franchise__icon-bg {
+    width: 85px;
+    height: 85px;
+    -webkit-background-size: 62px 54px;
+    background-size: 62px 54px;
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .header .btn-close,
   .header .btn-burger {
@@ -1270,6 +1302,7 @@ body.modal-open {
   .header .header__nav .menu__item {
     margin-bottom: 25px;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .header .header__nav .menu__item:last-child {
@@ -1278,5 +1311,26 @@ body.modal-open {
 
   .header .header__nav .menu__link:hover:after {
     display: none;
+  }
+
+  .header .language-nav {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .main__title {
+    font-size: 30px;
+  }
+
+  .main__title span {
+    font-size: 1.42em;
   }
 }

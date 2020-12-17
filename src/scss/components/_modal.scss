@@ -11,7 +11,7 @@
   max-height: 100%;
   z-index: -1;
   opacity: 0;
-   transition: opacity .5s linear;
+  transition: opacity .5s linear;
   overflow: hidden;
 
   &.modal_active {
@@ -69,82 +69,122 @@
 
 }
 
-.modal_franchise{
+.modal_franchise {
   max-width: 1096px;
-  width: 75%;
+  width: 100%;
   padding: 24px 53px 60px 70px;
-  .btn-close{
+
+  .btn-close {
     right: 58px;
     left: auto;
     z-index: 1;
   }
-  .modal__heading{
+
+  .modal__heading {
     font-size: 32px;
     margin-bottom: 36px;
     line-height: 2;
   }
-  .border-decor{
+
+  .border-decor {
     position: relative;
     padding-bottom: 23px;
-    &:after{
+
+    &:after {
       position: absolute;
       content: '';
       display: block;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background-image: linear-gradient(to right, rgba(20,33,61, 0),rgba(20,33,61, 1),rgba(20,33,61, 0));
+      background-image: linear-gradient(to right, rgba(20, 33, 61, 0), rgba(20, 33, 61, 1), rgba(20, 33, 61, 0));
       width: 150px;
       height: 1px;
       z-index: 2;
     }
   }
-  .modal__body{
+
+  .modal__body {
     display: flex;
     flex-wrap: wrap;
-     max-width: initial;
+    max-width: initial;
     background-color: #fff;
   }
-  .card-franchise{
-    width: 192px;
+
+  .card-franchise {
+    position: relative;
+    max-width: 192px;
+    width: 20%;
     padding: 0 26px;
     text-align: center;
     margin-bottom: 32px;
 
-    &__icon-bg{
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/svg/arrow.svg);
+      width: 56px;
+      height: 12px;
+      right: -30px;
+      top: 60px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+
+    &__icon-bg {
       width: 120px;
       height: 120px;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       border-radius: 50%;
       background-color: #14213D;
       background-repeat: no-repeat;
       -webkit-background-size: auto;
       background-size: auto;
       background-position: center center;
-      position: relative;
       padding: 5px;
-      &:before{
-        position: absolute;
-        content: '';
-        background-image: url(../assets/img/svg/arrow.svg);
-        width: 56px;
-        height: 12px;
-        right: -53%;
-        top: 50%;
-        transform: translateY(-50%);
-        background-repeat: no-repeat;
-        background-position: center center;
-        -webkit-background-size: 100%;
-        background-size: 100%;
-      }
-
     }
 
     &:nth-of-type(n+6) {
-      .card-franchise__icon-bg{
-        &:before{
-          transform: translateY(-50%) rotate(180deg);
-        }
+      &:before {
+        transform: rotate(180deg);
+        right: -26px;
+      }
+    }
+    &:last-child {
+      &:before {
+        //display: none;
+      }
+    }
+    &:nth-of-type(5) {
+      &:before {
+        background-image:  url(../assets/img/svg/arrow2.svg);
+        height: 237px;
+        width: 45px;
+      }
+    }
+  }
+
+  @include respond-to($lg) {
+    max-width: 900px;
+
+    .card-franchise {
+      width: 20%;
+      padding: 0 10px;
+
+      &:before {
+        width: 40px;
+        top: 30px;
+        right: -20px;
+      }
+
+      &__icon-bg {
+        width: 85px;
+        height: 85px;
+        -webkit-background-size: 62px 54px;
+        background-size: 62px 54px;
+
       }
     }
   }
