@@ -8,6 +8,9 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
+    function hideHeader() {
+        $('.header').addClass('header_active');
+    }
 
     //MOBILE MENU
     var nav = $('.header__nav');
@@ -78,6 +81,7 @@ $(document).ready(function () {
     // POPUP
     $("#popupTrigger").click(function (e) {
         e.preventDefault();
+        hideHeader();
         $("#popup").addClass("modal_active");
         $("#overlay").fadeIn();
         $(".mouse-parallax__bg").addClass("rotate-back_blur");
@@ -97,34 +101,31 @@ $(document).ready(function () {
 
     $("#franchiseTrigger").click(function (e) {
         e.preventDefault();
+        hideHeader();
         $(".modal").addClass("modal_active");
         $("#overlay").fadeIn();
         $("body").addClass("modal-open");
     });
 
     $("#closeFranchisePopup,  #overlay").click(function () {
-        console.log(123)
         $(".modal").removeClass("modal_active");
         $("#overlay").fadeOut();
         $("body").removeClass("modal-open");
     });
 
+    $(".open-drawer").click(function () {
+        const drawer = $(this).attr('data-open');
+        const currentSection =  $(this).parents(".section-buy");
 
-       $(".open-info-text").click(function () {
-        $(this).parents(".section-buy").find(".info-text").addClass('open');
-        $(this).parents(".section-buy").addClass('open-block');
-    });
-       $('.btn-close').click(function () {
-           $('.info-text').removeClass('open');
-           $(this).parents(".section-buy").removeClass('open-block');
-       })
+        hideHeader();
+        $(".section-buy .drawer").removeClass('open');
 
-    $(".open-info-form").click(function () {
-        $(this).parents(".section-buy").find(".info-form").addClass('open');
-        $(this).parents(".section-buy").addClass('open-block');
+        currentSection.find('.' + drawer).addClass('open');
+        currentSection.addClass('open-block');
     });
+
     $('.btn-close').click(function () {
-        $('.info-form').removeClass('open');
+        $('.drawer').removeClass('open');
         $(this).parents(".section-buy").removeClass('open-block');
     })
 });

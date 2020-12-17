@@ -19,6 +19,8 @@
 
 </head>
 <body>
+<div class="backdrop" id="overlay"></div>
+
 <div class="wrapper">
     <header class="header">
         <div class="container">
@@ -64,7 +66,6 @@
                 <span class="line"></span>
             </button>
         </div>
-
     </header>
 
     <main class="main">
@@ -84,7 +85,6 @@
                     </div>
                 </div>
                 <div class="mouse-parallax__content">
-
                     <div class="block-img">
                         <img src="assets/img/img.png" alt="квіти" class="img img-intro scale-up-center">
                         <h1 class="main__title show-title">Вирощуємо шафран <span>Високої якості</span></h1>
@@ -135,17 +135,18 @@
             </div>
         </section>
 
-        <section class="section section-buy" style="background-image: url(assets/img/spice.jpg);">
+        <section class="section section-buy">
+            <div class="section__bg" style="background-image: url(assets/img/spice.jpg);"></div>
             <div class="container">
                 <div class="section__content">
                     <h2 class="title">Спеції</h2>
                     <div class="block-btn">
-                        <button id="openTextInfo" class="open-info-text btn btn_main btn_border">Інформація</button>
-                        <button id="openForm" class="open-info-form btn btn_main btn_primary">Купити</button>
+                        <button data-open="drawer-info" class="open-drawer btn btn_main btn_border">Інформація</button>
+                        <button data-open="drawer-form" class="open-drawer btn btn_main btn_primary">Купити</button>
                     </div>
                 </div>
             </div>
-            <div class="info info-text">
+            <div class="drawer drawer-info info ">
                 <div class="info__header">
                     <button class="btn-close btn-close_round" aria-label="Закрити"></button>
                 </div>
@@ -176,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info info-form">
+            <div class="drawer drawer-form info info-form">
                 <div class="info__header">
                     <button class="btn-close btn-close_round" aria-label="Закрити"></button>
                 </div>
@@ -426,7 +427,7 @@
         </div>
     </footer>
 </div>
-<div class="backdrop" id="overlay"></div>
+
 <div class="modal" id="popup">
     <div class="modal__header">
         <button class="btn-close btn-close_round" aria-label="Закрити" id="closePopup"></button>
