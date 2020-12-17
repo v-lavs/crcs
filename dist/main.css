@@ -1368,21 +1368,79 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 36px;
+  }
+
   .title_big {
-    font-size: 66px;
+    font-size: 50px;
   }
 
   .title_middle {
-    font-size: 48px;
+    font-size: 38px;
   }
 
   .section-about .container {
     flex-wrap: wrap;
+    background-size: 0;
   }
 
-  .section-about .section__content,
-  .section-about .section__thumb {
+  .section-about .section__content {
     width: 100%;
+    padding-bottom: 90px;
+  }
+
+  .section-about .section__thumb {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .section-partners {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .section-partners .title {
+    margin-bottom: 105px;
+  }
+
+  .section-buy {
+    min-height: 500px;
+    background-size: 140%;
+  }
+
+  .section-buy.open-block {
+    background-size: 130%;
+  }
+
+  .section-buy .container {
+    padding-bottom: 50px;
+  }
+
+  .section-buy .info {
+    padding: 32px 20px 50px 20px;
+  }
+
+  .section-buy .info .btn-close {
+    top: 0;
+  }
+
+  .section-buy .info .scroll {
+    height: 295px;
+  }
+
+  .section-buy .info__header {
+    padding-top: 0;
+    margin-bottom: 90px;
+  }
+
+  .section-buy .info__header:before {
+    display: none;
+  }
+
+  .section-buy .title {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .container {
@@ -1444,25 +1502,43 @@ body.modal-open {
     justify-content: center;
   }
 
+  .aside {
+    min-height: 450px;
+  }
+
   .aside .wrap-logo {
     flex-direction: column;
+    width: 70%;
+    text-align: center;
   }
 
   .aside .aside__logo {
     margin-right: 0;
     margin-bottom: 40px;
+    max-width: 60px;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .sub-title {
+    font-size: 22px;
+  }
+
+  .title_middle {
+    font-size: 34px;
+  }
+
   .container {
     width: 100%;
     padding: 0 20px;
   }
 
-  .aside .wrap-logo {
-    width: 70%;
-    text-align: center;
+  .aside {
+    min-height: 400px;
+  }
+
+  .aside .aside__logo {
+    max-width: 56px;
   }
 }
 
@@ -1471,13 +1547,20 @@ body.modal-open {
     font-size: 14px;
   }
 
+  .sub-title {
+    font-size: 20px;
+  }
+
   .title {
     font-size: 32px;
   }
 
-  .title_big,
-  .title_middle {
+  .title_big {
     font-size: 32px;
+  }
+
+  .title_middle {
+    font-size: 24px;
   }
 
   .title_small {
@@ -1490,5 +1573,10 @@ body.modal-open {
 
   .main__title span {
     font-size: 1.42em;
+  }
+
+  .aside .wrap-logo {
+    width: 70%;
+    text-align: center;
   }
 }

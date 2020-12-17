@@ -43,15 +43,27 @@
   }
 
   @include respond-to($md) {
+    min-height: 450px;
     .wrap-logo {
       flex-direction: column;
+      width: 70%;
+      text-align: center;
     }
     .aside__logo {
       margin-right: 0;
       margin-bottom: 40px;
+      max-width: 60px;
     }
   }
+
   @include respond-to($sm) {
+    min-height: 400px;
+    .aside__logo{
+      max-width: 56px;
+    }
+      }
+
+  @include respond-to($xs) {
     .wrap-logo {
       width: 70%;
       text-align: center;

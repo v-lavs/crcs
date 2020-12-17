@@ -142,4 +142,40 @@
       justify-content: space-between;
     }
   }
+
+  @include respond-to($md) {
+    min-height: 500px;
+    background-size: 140%;
+    &.open-block {
+      background-size: 130%;
+    }
+    .container {
+      padding-bottom: 50px;
+    }
+    .info {
+      padding: 32px 20px 50px 20px;
+
+      .btn-close {
+        top: 0;
+      }
+
+      .scroll {
+        height: 295px;
+      }
+
+      &__header {
+        padding-top: 0;
+        margin-bottom: 90px;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+  }
 }

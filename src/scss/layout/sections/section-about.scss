@@ -123,10 +123,15 @@
   @include respond-to($md) {
     .container {
       flex-wrap: wrap;
+      background-size: 0;
     }
-    .section__content,
-    .section__thumb {
+    .section__content{
       width: 100%;
+      padding-bottom: 90px;
+    }
+    .section__thumb {
+      width: 60%;
+      margin: 0 auto;
     }
   }
   @include respond-to($sm) {
