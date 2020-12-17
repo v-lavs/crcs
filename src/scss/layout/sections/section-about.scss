@@ -31,7 +31,7 @@
     line-height: 1.75;
 
     p {
-      margin-bottom: .7em;
+      margin-bottom: 1.8em;
 
       &:last-child {
         margin-bottom: 0;
@@ -61,6 +61,7 @@
     position: relative;
     width: 40%;
     padding-left: 4%;
+
     &:before {
       position: absolute;
       content: '';
@@ -72,26 +73,61 @@
       top: 21%;
       left: 29%;
       z-index: -1;
-    }  }
+    }
+  }
 
 
   .img-about {
-    height: 100%;
-    width: auto;
+    //height: 100%;
+    height: auto;
+    //width: auto;
+    width: 125%;
     display: inline-block;
     max-width: initial;
 
 
   }
 
-  @include respond-to($xl) {
+  @media only screen and (max-width: 1580px) {
+    .section__thumb {
+      padding-left: 0;
 
+      &:before {
+        left: 18%;
+      }
+
+    }
+    .container {
+      background-position: right -43% bottom;
+    }
   }
   @include respond-to($lg) {
+    .section__thumb {
+      width: 50%;
+      display: flex;
+      align-items: center;
 
+      &:before {
+        width: 410px;
+        height: 410px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .container {
+      background-size: 80%;
+    }
   }
   @include respond-to($md) {
-
+    .container {
+      flex-wrap: wrap;
+    }
+    .section__content,
+    .section__thumb {
+      width: 100%;
+    }
   }
   @include respond-to($sm) {
 
@@ -99,4 +135,19 @@
   @include respond-to($xs) {
 
   }
+}
+
+@keyframes scale{
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale {
+  animation: scale 2.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

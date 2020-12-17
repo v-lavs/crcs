@@ -28,10 +28,10 @@ $(document).ready(function () {
     var header = $('.header'),
         scrollPrev = 0;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
 
-        if ( scrolled > 100 && scrolled > scrollPrev ) {
+        if (scrolled > 100 && scrolled > scrollPrev) {
             header.addClass('header_active');
         } else {
             header.removeClass('header_active');
@@ -110,11 +110,21 @@ $(document).ready(function () {
     });
 
 
-    var openBlock = $('#openText');
-
-    $('.section-buy .open-info').on('click', function (e) {
-        e.preventDefault();
-        openBlock.addClass('open');
-
+       $(".open-info-text").click(function () {
+        $(this).parents(".section-buy").find(".info-text").addClass('open');
+        $(this).parents(".section-buy").addClass('open-block');
     });
+       $('.btn-close').click(function () {
+           $('.info-text').removeClass('open');
+           $(this).parents(".section-buy").removeClass('open-block');
+       })
+
+    $(".open-info-form").click(function () {
+        $(this).parents(".section-buy").find(".info-form").addClass('open');
+        $(this).parents(".section-buy").addClass('open-block');
+    });
+    $('.btn-close').click(function () {
+        $('.info-form').removeClass('open');
+        $(this).parents(".section-buy").removeClass('open-block');
+    })
 });

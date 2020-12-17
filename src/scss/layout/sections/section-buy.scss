@@ -1,14 +1,19 @@
 .section-buy {
+  color: $white;
+  overflow: hidden;
+  width: 100%;
   display: flex;
   position: relative;
   min-height: 800px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: $white;
-  padding-bottom: 116px;
-  overflow: hidden;
+  background-size: 120%;
+  transition: background-size .35s;
+
+  &.open-block {
+    transition: background-size .35s;
+    background-size: 110%;
+  }
 
   &:before {
     position: absolute;
@@ -25,6 +30,7 @@
   .container {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 116px;
   }
 
   .section__content {
@@ -112,6 +118,21 @@
         width: 100%;
         max-width: 515px;
       }
+    }
+  }
+  .info-text{
+    overflow: auto;
+  }
+  .info-form{
+    .info__body{
+      height: 100%;
+    }
+    .form{
+      padding-bottom: 119px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }
