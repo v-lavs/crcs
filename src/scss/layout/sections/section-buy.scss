@@ -166,6 +166,7 @@ $anim_time: .3s;
     }
     .info {
       padding: 32px 20px 50px 20px;
+      width: 50%;
 
       .btn-close {
         top: 0;
@@ -187,6 +188,9 @@ $anim_time: .3s;
     .drawer-form .form {
       padding-bottom: 62px;
     }
+    .form__group {
+      padding-top: 5px;
+    }
     .title {
       padding-bottom: 20px;
       margin-bottom: 30px;
@@ -200,6 +204,9 @@ $anim_time: .3s;
     .section__bg {
       transform: scale(1);
     }
+    .info__body .scroll{
+      height: 75vh;
+    }
     .drawer {
       position: fixed;
       top: 0;
@@ -208,8 +215,11 @@ $anim_time: .3s;
       width: 100%;
     }
     .title {
-      padding-bottom: 10px;
-      margin: 0 0 15px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .section__content {
+      padding: 0 17px;
     }
   }
 
@@ -218,6 +228,13 @@ $anim_time: .3s;
       &:before {
         width: 100vw;
       }
+    }
+    .block-btn {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn {
+      margin-right: 0;
     }
   }
 }

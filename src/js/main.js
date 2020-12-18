@@ -19,12 +19,14 @@ $(document).ready(function () {
         e.preventDefault();
         nav.addClass('open');
         jQuery('.backdrop').fadeIn();
+        $("body").addClass("modal-open");
     });
 
     $('.btn-close, .backdrop').click(function (e) {
         e.preventDefault();
         nav.removeClass('open');
         jQuery('.backdrop').fadeOut();
+        $("body").removeClass("modal-open");
     });
 
     //HEADER SCROLL
@@ -102,20 +104,20 @@ $(document).ready(function () {
     $("#franchiseTrigger").click(function (e) {
         e.preventDefault();
         hideHeader();
-        $(".modal").addClass("modal_active");
+        $(".modal_franchise").addClass("modal_active");
         $("#overlay").fadeIn();
         $("body").addClass("modal-open");
     });
 
     $("#closeFranchisePopup,  #overlay").click(function () {
-        $(".modal").removeClass("modal_active");
+        $(".modal_franchise").removeClass("modal_active");
         $("#overlay").fadeOut();
         $("body").removeClass("modal-open");
     });
 
     $(".open-drawer").click(function () {
         const drawer = $(this).attr('data-open');
-        const currentSection =  $(this).parents(".section-buy");
+        const currentSection = $(this).parents(".section-buy");
 
         hideHeader();
         $(".section-buy .drawer").removeClass('open');

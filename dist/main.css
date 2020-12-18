@@ -403,7 +403,7 @@ body.modal-open {
 
 .modal_franchise .modal__heading {
   font-size: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   line-height: 2;
 }
 
@@ -451,7 +451,6 @@ body.modal-open {
   top: 59px;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-background-size: 100%;
   background-size: 100%;
 }
 
@@ -462,7 +461,6 @@ body.modal-open {
   border-radius: 50%;
   background-color: #14213D;
   background-repeat: no-repeat;
-  -webkit-background-size: auto;
   background-size: auto;
   background-position: center center;
   padding: 5px;
@@ -1354,15 +1352,24 @@ body.modal-open {
 
   .modal_franchise .card-franchise:before {
     width: 40px;
-    top: 30px;
+    top: 40px;
     right: -20px;
   }
 
   .modal_franchise .card-franchise__icon-bg {
     width: 85px;
     height: 85px;
-    -webkit-background-size: 62px 54px;
     background-size: 62px 54px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(n+6):before {
+    right: -18px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(5):before {
+    top: 42px;
+    right: -18px;
+    width: 40px;
   }
 
   .section-about .section__thumb {
@@ -1399,6 +1406,35 @@ body.modal-open {
 
   .title_middle {
     font-size: 38px;
+  }
+
+  .modal_franchise {
+    max-width: 750px;
+  }
+
+  .modal_franchise .card-franchise__icon-bg {
+    width: 68px;
+    height: 68px;
+    background-size: 54px 48px;
+  }
+
+  .modal_franchise .card-franchise__title {
+    font-size: 14px;
+  }
+
+  .modal_franchise .card-franchise:before {
+    width: 44px;
+    top: 30px;
+    right: -23px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(n+6):before {
+    right: -21px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(5):before {
+    top: 34px;
+    right: -21px;
   }
 
   .section-about .container {
@@ -1441,6 +1477,7 @@ body.modal-open {
 
   .section-buy .info {
     padding: 32px 20px 50px 20px;
+    width: 50%;
   }
 
   .section-buy .info .btn-close {
@@ -1462,6 +1499,10 @@ body.modal-open {
 
   .section-buy .drawer-form .form {
     padding-bottom: 62px;
+  }
+
+  .section-buy .form__group {
+    padding-top: 5px;
   }
 
   .section-buy .title {
@@ -1560,6 +1601,35 @@ body.modal-open {
     font-size: 34px;
   }
 
+  .modal_franchise {
+    max-width: 580px;
+    min-height: 500px;
+    padding: 24px 40px 40px 40px;
+  }
+
+  .modal_franchise .modal__heading {
+    font-size: 24px;
+  }
+
+  .modal_franchise .card-franchise__icon-bg {
+    width: 50px;
+    height: 50px;
+    background-size: 36px 48px;
+  }
+
+  .modal_franchise .card-franchise__title {
+    font-size: 12px;
+  }
+
+  .modal_franchise .card-franchise:before {
+    top: 21px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(5):before {
+    top: 24px;
+    right: -21px;
+  }
+
   .section-franchise {
     padding: 55px 0 65px;
   }
@@ -1630,6 +1700,109 @@ body.modal-open {
     padding: 10px 20px;
   }
 
+  .modal {
+    padding: 30px 20px 85px;
+  }
+
+  .modal_franchise {
+    max-width: 360px;
+  }
+
+  .modal_franchise .modal__body {
+    justify-content: center;
+  }
+
+  .modal_franchise .card-franchise {
+    max-width: 130px;
+    width: 50%;
+    padding: 0 21px 30px;
+  }
+
+  .modal_franchise .card-franchise:after {
+    position: absolute;
+    content: '';
+    left: -22px;
+    top: 27px;
+  }
+
+  .modal_franchise .card-franchise:before {
+    top: 27px;
+  }
+
+  .modal_franchise .card-franchise__title {
+    font-size: 14px;
+  }
+
+  .modal_franchise .card-franchise__icon-bg {
+    width: 68px;
+    height: 68px;
+    background-size: 47px;
+    margin-bottom: 10px;
+  }
+
+  .modal_franchise .btn-close {
+    position: static;
+  }
+
+  .modal_franchise .border-decor {
+    padding-bottom: 14px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(2):before,
+  .modal_franchise .card-franchise:nth-of-type(6):before {
+    right: -22px;
+    top: 31px;
+    background-image: none;
+    height: 100%;
+    width: 40px;
+    border: 3px solid #14213D;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(5):after,
+  .modal_franchise .card-franchise:nth-of-type(9):after {
+    background-image: url(../assets/img/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 12px;
+    width: 44px;
+    top: 31px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(3):after,
+  .modal_franchise .card-franchise:nth-of-type(7):after {
+    height: 100%;
+    width: 40px;
+    border: 3px solid #14213D;
+    border-right: none;
+    border-bottom: none;
+    top: 31px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(6):before {
+    transform: rotate(0);
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(3):before,
+  .modal_franchise .card-franchise:nth-of-type(4):before {
+    transform: rotate(180deg);
+    right: -20px;
+    top: 27px;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(5):before {
+    background-image: url(../assets/img/svg/arrow.svg);
+    height: 26px;
+    width: 44px;
+    border: none;
+  }
+
+  .modal_franchise .card-franchise:nth-of-type(10):before {
+    display: none;
+  }
+
   .section-partners {
     padding-top: 45px;
     padding-bottom: 52px;
@@ -1651,6 +1824,10 @@ body.modal-open {
     transform: scale(1);
   }
 
+  .section-buy .info__body .scroll {
+    height: 75vh;
+  }
+
   .section-buy .drawer {
     position: fixed;
     top: 0;
@@ -1660,8 +1837,12 @@ body.modal-open {
   }
 
   .section-buy .title {
-    padding-bottom: 10px;
-    margin: 0 0 15px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .section-buy .section__content {
+    padding: 0 17px;
   }
 
   .container {
@@ -1710,6 +1891,15 @@ body.modal-open {
 
   .section-buy .title:before {
     width: 100vw;
+  }
+
+  .section-buy .block-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-buy .btn {
+    margin-right: 0;
   }
 
   .section-location .wrap-map {
