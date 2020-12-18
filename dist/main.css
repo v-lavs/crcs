@@ -153,15 +153,14 @@ body.modal-open {
 }
 
 .simplebar-track.simplebar-vertical {
-  -webkit-box-shadow: inset 0 0 4px rgba(29, 53, 83, 0.2);
+  -webkit-box-shadow: inset 0 0 4px rgba(29, 53, 83, 0.4);
   border-radius: 4px;
   width: 8px;
 }
 
 .simplebar-scrollbar.simplebar-visible:before {
   border-radius: 4px;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: inset 0 0 6px rgba(29, 53, 83, 0.8);
+  background-color: #1D3553;
   left: 0;
   right: 0;
 }
@@ -1424,14 +1423,11 @@ body.modal-open {
   .section-buy {
     min-height: 500px;
     background-size: 140%;
+    padding-bottom: 50px;
   }
 
   .section-buy.open-block {
     background-size: 130%;
-  }
-
-  .section-buy .container {
-    padding-bottom: 50px;
   }
 
   .section-buy .info {
@@ -1443,16 +1439,20 @@ body.modal-open {
   }
 
   .section-buy .info .scroll {
-    height: 295px;
+    height: 365px;
   }
 
   .section-buy .info__header {
     padding-top: 0;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
   }
 
   .section-buy .info__header:before {
     display: none;
+  }
+
+  .section-buy .drawer-form .form {
+    padding-bottom: 62px;
   }
 
   .section-buy .title {

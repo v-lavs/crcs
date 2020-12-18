@@ -146,12 +146,12 @@
                     </div>
                 </div>
             </div>
-            <div class="drawer drawer-info info ">
+            <div class="drawer drawer-info info">
                 <div class="info__header">
                     <button class="btn-close btn-close_round" aria-label="Закрити"></button>
                 </div>
                 <div class="info__body">
-                    <div data-simplebar class="scroll dynamic-content">
+                    <div data-simplebar data-simplebar-auto-hide="false" class="scroll dynamic-content">
                         <p>
                             Найдорожча у світі пряність, що представлена висушеними приймочками шафрану посівного.
                             Належить
@@ -233,17 +233,18 @@
             </div>
         </section>
 
-        <section class="section section-buy" style="background-image: url(assets/img/bulbs.jpg);">
+        <section class="section section-buy">
+            <div class="section__bg" style="background-image: url(assets/img/bulbs.jpg);"></div>
             <div class="container">
                 <div class="section__content">
                     <h2 class="title">Цибулини</h2>
                     <div class="block-btn">
-                        <button class="open-info-text open-info btn btn_main btn_border">Інформація</button>
-                        <button class="open-info-form open-info btn btn_main btn_primary">Купити</button>
+                        <button data-open="drawer-info" class="open-drawer open-info btn btn_main btn_border">Інформація</button>
+                        <button data-open="drawer-form" class="open-drawer open-info btn btn_main btn_primary">Купити</button>
                     </div>
                 </div>
             </div>
-            <div class="info info-text">
+            <div class="drawer drawer-info info">
                 <div class="info__header">
                     <button class="btn-close btn-close_round" aria-label="Закрити"></button>
                 </div>
@@ -285,7 +286,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info info-form">
+            <div class="drawer drawer-form info info-form">
                 <div class="info__header">
                     <button class="btn-close btn-close_round" aria-label="Закрити"></button>
                 </div>

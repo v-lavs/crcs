@@ -160,11 +160,9 @@ $anim_time: .3s;
   @include respond-to($md) {
     min-height: 500px;
     background-size: 140%;
+    padding-bottom: 50px;
     &.open-block {
       background-size: 130%;
-    }
-    .container {
-      padding-bottom: 50px;
     }
     .info {
       padding: 32px 20px 50px 20px;
@@ -174,19 +172,21 @@ $anim_time: .3s;
       }
 
       .scroll {
-        height: 295px;
+        height: 365px;
       }
 
       &__header {
         padding-top: 0;
-        margin-bottom: 90px;
+        margin-bottom: 65px;
 
         &:before {
           display: none;
         }
       }
     }
-
+    .drawer-form .form {
+      padding-bottom: 62px;
+    }
     .title {
       padding-bottom: 20px;
       margin-bottom: 30px;
@@ -209,7 +209,7 @@ $anim_time: .3s;
     }
     .title {
       padding-bottom: 10px;
-      margin:0 0 15px;
+      margin: 0 0 15px;
     }
   }
 
