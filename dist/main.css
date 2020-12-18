@@ -1332,6 +1332,10 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 1440px) {
+  .section-partners .title {
+    margin-bottom: 100px;
+  }
+
   .container {
     max-width: 1130px;
   }
@@ -1418,7 +1422,7 @@ body.modal-open {
   }
 
   .section-partners .title {
-    margin-bottom: 105px;
+    margin-bottom: 80px;
   }
 
   .section-partners .partners-name {
@@ -1560,6 +1564,16 @@ body.modal-open {
     display: none;
   }
 
+  .section-partners .title {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+
+  .section-partners .partners-list .wrap-img {
+    width: 50px;
+    height: 50px;
+  }
+
   .aside {
     min-height: 400px;
   }
@@ -1607,11 +1621,6 @@ body.modal-open {
   .section-partners {
     padding-top: 45px;
     padding-bottom: 52px;
-  }
-
-  .section-partners .title {
-    margin-bottom: 40px;
-    font-size: 20px;
   }
 
   .section-partners .partners-list .wrap-img {

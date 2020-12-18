@@ -47,12 +47,17 @@
       height: 64px;
     }
   }
+  @include respond-to($xl){
+    .title {
+      margin-bottom: 100px;
+    }
+  }
 
   @include respond-to($md) {
     padding-top: 80px;
     padding-bottom: 100px;
     .title {
-      margin-bottom: 105px;
+      margin-bottom: 80px;
     }
     .partners-name {
       font-size: 20px;
@@ -62,14 +67,19 @@
     .partners-name {
       display: none;
     }
+    .title {
+      margin-bottom: 40px;
+      font-size: 22px;
+    }
+    .partners-list .wrap-img{
+      width: 50px;
+      height: 50px;
+    }
   }
   @include respond-to($xs) {
     padding-top: 45px;
     padding-bottom: 52px;
-    .title {
-      margin-bottom: 40px;
-      font-size: 20px;
-    }
+
     .partners-list .wrap-img {
       width: 36px;
       height: 38px;
