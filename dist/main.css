@@ -1682,6 +1682,18 @@ body.modal-open {
     font-size: 14px;
   }
 
+  .section-franchise {
+    padding-bottom: 50px;
+  }
+
+  .section-franchise .title {
+    margin-bottom: 10px;
+  }
+
+  .section-franchise .sub-title {
+    margin-bottom: 24px;
+  }
+
   .section-partners {
     padding-bottom: 48px;
   }
