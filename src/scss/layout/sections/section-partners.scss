@@ -21,7 +21,7 @@
     &__img {
       opacity: .52;
       transition: opacity .5s;
-          }
+    }
 
     &__item {
       width: 20%;
@@ -43,14 +43,46 @@
 
     .wrap-img {
       margin: 0 auto 20px;
+      width: 64px;
       height: 64px;
     }
   }
+
   @include respond-to($md) {
     padding-top: 80px;
     padding-bottom: 100px;
-    .title{
+    .title {
       margin-bottom: 105px;
+    }
+    .partners-name {
+      font-size: 20px;
+    }
+  }
+  @include respond-to($sm) {
+    .partners-name {
+      display: none;
+    }
+  }
+  @include respond-to($xs) {
+    padding-top: 45px;
+    padding-bottom: 52px;
+    .title {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+    .partners-list .wrap-img {
+      width: 36px;
+      height: 38px;
+      margin-bottom: 0;
+    }
+  }
+  @include respond-to($xxs) {
+    padding-bottom: 48px;
+    .title {
+      font-size: 14px;
+    }
+    .partners-list__item {
+      padding: 5px;
     }
   }
 }

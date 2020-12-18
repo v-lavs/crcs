@@ -867,6 +867,7 @@ body.modal-open {
 
 .section-partners .partners-list .wrap-img {
   margin: 0 auto 20px;
+  width: 64px;
   height: 64px;
 }
 
@@ -1420,6 +1421,10 @@ body.modal-open {
     margin-bottom: 105px;
   }
 
+  .section-partners .partners-name {
+    font-size: 20px;
+  }
+
   .section-buy {
     min-height: 500px;
     background-size: 140%;
@@ -1551,6 +1556,10 @@ body.modal-open {
     padding: 55px 0 65px;
   }
 
+  .section-partners .partners-name {
+    display: none;
+  }
+
   .aside {
     min-height: 400px;
   }
@@ -1595,6 +1604,22 @@ body.modal-open {
     padding: 10px 20px;
   }
 
+  .section-partners {
+    padding-top: 45px;
+    padding-bottom: 52px;
+  }
+
+  .section-partners .title {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .section-partners .partners-list .wrap-img {
+    width: 36px;
+    height: 38px;
+    margin-bottom: 0;
+  }
+
   .section-buy {
     padding: 30px 0;
     min-height: 320px;
@@ -1637,6 +1662,18 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 420px) {
+  .section-partners {
+    padding-bottom: 48px;
+  }
+
+  .section-partners .title {
+    font-size: 14px;
+  }
+
+  .section-partners .partners-list__item {
+    padding: 5px;
+  }
+
   .section-buy .title:before {
     width: 100vw;
   }
