@@ -1,3 +1,9 @@
-<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 8H56M56 8L48 2M56 8L48 14" stroke="#14213D" stroke-width="3"/>
+
+<svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 viewBox="0 0 59 16" style="enable-background:new 0 0 59 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#14213D;}
+</style>
+<polygon class="st0" points="58,8 57.9,8.1 56,9.5 55.6,9.9 48.1,15.4 46.3,13 51,9.5 1,9.5 1,6.5 51.1,6.5 46.3,3 48.1,0.6 
+	55.6,6.1 56.1,6.5 57.9,7.9 "/>
 </svg>

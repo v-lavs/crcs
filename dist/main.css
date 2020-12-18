@@ -182,6 +182,43 @@ body.modal-open {
   font-size: 24px;
 }
 
+.fade-in {
+  /*transition: .45s;*/
+  opacity: 0;
+}
+
+.fade-in.active {
+  animation: fadeIn ease-in 1.25s forwards .5s;
+}
+
+.scale.active {
+  animation: scale 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -473,7 +510,7 @@ body.modal-open {
 
 .modal_franchise .card-franchise:nth-of-type(5):before {
   right: -26px;
-  top: 61px;
+  top: 63px;
   background-image: none;
   height: 100%;
   width: 45px;
@@ -789,20 +826,8 @@ body.modal-open {
   max-width: initial;
 }
 
-@keyframes scale {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.scale {
-  animation: scale 2.25s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+.section-about .open-up {
+  display: none;
 }
 
 .section-franchise {
@@ -876,8 +901,6 @@ body.modal-open {
   width: 100%;
   display: flex;
   min-height: 800px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
   padding-bottom: 115px;
 }
 
@@ -1367,9 +1390,10 @@ body.modal-open {
   }
 
   .modal_franchise .card-franchise:nth-of-type(5):before {
-    top: 42px;
+    top: 44px;
     right: -18px;
     width: 40px;
+    border-width: 2px;
   }
 
   .section-about .section__thumb {
@@ -1440,6 +1464,7 @@ body.modal-open {
   .section-about .container {
     flex-wrap: wrap;
     background-size: 0;
+    padding-bottom: 50px;
   }
 
   .section-about .section__content {
@@ -1450,6 +1475,10 @@ body.modal-open {
   .section-about .section__thumb {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .section-about .section__thumb .img-about {
+    width: 100%;
   }
 
   .section-partners {
@@ -1653,8 +1682,21 @@ body.modal-open {
   }
 
   .modal_franchise .card-franchise:nth-of-type(5):before {
-    top: 24px;
+    top: 26px;
     right: -21px;
+  }
+
+  .section-about .section__content {
+    padding-bottom: 60px;
+  }
+
+  .section-about .section__thumb {
+    width: 50%;
+  }
+
+  .section-about .section__thumb:before {
+    width: 280px;
+    height: 280px;
   }
 
   .section-franchise {
@@ -1818,7 +1860,7 @@ body.modal-open {
     background-image: none;
     height: 100%;
     width: 40px;
-    border: 3px solid #14213D;
+    border: 2px solid #14213D;
     border-left: none;
     border-bottom: none;
   }
@@ -1831,7 +1873,7 @@ body.modal-open {
     background-size: 100%;
     height: 12px;
     width: 44px;
-    top: 31px;
+    top: 26px;
   }
 
   .modal_franchise .card-franchise:nth-of-type(9):before {
@@ -1842,7 +1884,7 @@ body.modal-open {
   .modal_franchise .card-franchise:nth-of-type(7):after {
     height: 100%;
     width: 40px;
-    border: 3px solid #14213D;
+    border: 2px solid #14213D;
     border-right: none;
     border-bottom: none;
     top: 31px;
@@ -1855,19 +1897,32 @@ body.modal-open {
   .modal_franchise .card-franchise:nth-of-type(3):before,
   .modal_franchise .card-franchise:nth-of-type(4):before {
     transform: rotate(180deg);
-    right: -20px;
+    right: -22px;
     top: 27px;
   }
 
   .modal_franchise .card-franchise:nth-of-type(5):before {
     background-image: url(../assets/img/svg/arrow.svg);
-    height: 26px;
+    height: 18px;
     width: 44px;
     border: none;
   }
 
   .modal_franchise .card-franchise:nth-of-type(10):before {
     display: none;
+  }
+
+  .section-about .section__content {
+    padding-bottom: 35px;
+  }
+
+  .section-about .decor:before {
+    display: none;
+  }
+
+  .section-about .section__thumb:before {
+    width: 200px;
+    height: 200px;
   }
 
   .section-partners {
@@ -1963,6 +2018,35 @@ body.modal-open {
 @media only screen and (max-width: 420px) {
   .sub-title {
     font-size: 14px;
+  }
+
+  .section-about .section__content {
+    padding-right: 0;
+  }
+
+  .section-about .section__text {
+    font-size: 14px;
+    padding-left: 0;
+  }
+
+  .section-about .section__thumb:before {
+    width: 146px;
+    height: 146px;
+  }
+
+  .section-about .mob-hide {
+    position: absolute;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+  }
+
+  .section-about .open-up {
+    display: block;
+    position: relative;
+    z-index: 4;
+    font-weight: 700;
   }
 
   .section-franchise {

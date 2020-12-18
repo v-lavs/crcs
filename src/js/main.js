@@ -3,7 +3,7 @@
 * */
 
 //= include ../../node_modules/jquery/dist/jquery.js ;
-
+//= include ../lib/waypoints/index.js
 
 // CUSTOM SCRIPTS
 
@@ -44,10 +44,8 @@ $(document).ready(function () {
         scrollPrev = scrolled;
     });
 
-    /***
-     * SMOOTH SCROLL TO ANCHOR
-     **/
 
+     // SMOOTH SCROLL TO ANCHOR
     function smoothScrollToAnchor(selector) {
         $(selector).on('click', function (event) {
             var anchor = $.attr(this, 'href');
@@ -80,6 +78,7 @@ $(document).ready(function () {
             'translate(+' + x * 40 + 'px, +' + y * 40 + 'px)',
         );
     });
+
     // POPUP
     $("#popupTrigger").click(function (e) {
         e.preventDefault();
@@ -129,5 +128,29 @@ $(document).ready(function () {
     $('.btn-close').click(function () {
         $('.drawer').removeClass('open');
         $(this).parents(".section-buy").removeClass('open-block');
-    })
+    });
+
+
+    //READ MORE BTN
+
+    $('.text-hide .open-up').click(function(e) {
+        e.preventDefault();
+        $('.text-hide .mob-hide').removeClass('mob-hide');
+        $(this).hide();
+    });
+
+    //ANIMATION BLOCKS
+
+    // ANIMATION
+    var fadeInBlocks = $('.fade-in').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '85%'
+    });
+
+    var scaleBlocks = $('.scale').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '85%'
+    });
 });

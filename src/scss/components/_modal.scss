@@ -165,7 +165,7 @@
     &:nth-of-type(5) {
       &:before {
         right: -26px;
-        top: 61px;
+        top: 63px;
         background-image: none;
         height: 100%;
         width: 45px;
@@ -201,9 +201,10 @@
       }
     }
     .card-franchise:nth-of-type(5):before {
-      top: 42px;
+      top: 44px;
       right: -18px;
       width: 40px;
+      border-width: 2px;
     }
   }
   @include respond-to($md) {
@@ -257,7 +258,7 @@
     }
 
     .card-franchise:nth-of-type(5):before {
-      top: 24px;
+      top: 26px;
       right: -21px;
     }
   }
@@ -306,7 +307,7 @@
         background-image: none;
         height: 100%;
         width: 40px;
-        border: 3px solid #14213D;
+        border: 2px solid #14213D;
         border-left: none;
         border-bottom: none;
       }
@@ -320,7 +321,7 @@
         background-size: 100%;
         height: 12px;
         width: 44px;
-        top: 31px;
+        top: 26px;
       }
     }
     .card-franchise:nth-of-type(9) {
@@ -333,12 +334,13 @@
       &:after {
         height: 100%;
         width: 40px;
-        border: 3px solid #14213D;
+        border: 2px solid #14213D;
         border-right: none;
         border-bottom: none;
         top: 31px;
       }
     }
+
     .card-franchise:nth-of-type(6) {
       &:before {
         transform: rotate(0);
@@ -348,14 +350,15 @@
     .card-franchise:nth-of-type(4) {
       &:before {
         transform: rotate(180deg);
-        right: -20px;
+        right: -22px;
         top: 27px;
       }
     }
+
     .card-franchise:nth-of-type(5) {
       &:before {
         background-image: url(../assets/img/svg/arrow.svg);
-        height: 26px;
+        height: 18px;
         width: 44px;
         border: none;
       }
