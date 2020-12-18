@@ -68,6 +68,15 @@
 
   @include respond-to($xs) {
     padding: 30px 20px 85px;
+    .btn-close {
+      position: static;
+    }
+    .modal__heading{
+      display: none;
+    }
+    .modal__header{
+      margin-bottom: 58px;
+    }
   }
 }
 
@@ -169,7 +178,6 @@
 
   @include respond-to($lg) {
     max-width: 900px;
-
     .card-franchise {
       width: 20%;
       padding-left: 10px;
@@ -198,7 +206,6 @@
       width: 40px;
     }
   }
-
   @include respond-to($md) {
     max-width: 750px;
     .card-franchise {
@@ -255,7 +262,7 @@
     }
   }
   @include respond-to($xs) {
-    max-width: 360px;
+    max-width: 440px;
     .modal__body {
       justify-content: center;
     }
@@ -285,9 +292,7 @@
       background-size: 47px;
       margin-bottom: 10px;
     }
-    .btn-close {
-      position: static;
-    }
+
     .border-decor {
       padding-bottom: 14px;
     }
