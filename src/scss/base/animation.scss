@@ -1,5 +1,5 @@
-.fade-in {
-  /*transition: .45s;*/
+.fade-in ,
+.scale {
   opacity: 0;
 }
 
@@ -9,6 +9,18 @@
 
 .scale.active {
   animation: scale 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+}
+
+.scale.active:nth-child(1).active {
+  animation-delay: 0.1s;
+}
+
+.scale.active:nth-child(2).active {
+  animation-delay: 0.3s;
+}
+
+.scale.active:nth-child(3).active {
+  animation-delay: .5s;
 }
 
 @keyframes fadeIn {
