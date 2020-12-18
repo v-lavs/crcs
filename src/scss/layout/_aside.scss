@@ -46,7 +46,7 @@
     min-height: 450px;
     .wrap-logo {
       flex-direction: column;
-      width: 70%;
+      width: 75%;
       text-align: center;
     }
     .aside__logo {
@@ -61,12 +61,15 @@
     .aside__logo{
       max-width: 56px;
     }
+    .title{
+      font-weight: 600;
+    }
       }
 
-  @include respond-to($xs) {
-    .wrap-logo {
-      width: 70%;
-      text-align: center;
+  @include respond-to($xxs){
+    min-height: 324px;
+    .wrap-logo{
+      margin-bottom: 40px;
     }
   }
 }

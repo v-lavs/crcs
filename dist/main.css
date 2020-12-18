@@ -1536,7 +1536,7 @@ body.modal-open {
 
   .aside .wrap-logo {
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     text-align: center;
   }
 
@@ -1580,6 +1580,10 @@ body.modal-open {
 
   .aside .aside__logo {
     max-width: 56px;
+  }
+
+  .aside .title {
+    font-weight: 600;
   }
 }
 
@@ -1663,20 +1667,20 @@ body.modal-open {
   .main__title span {
     font-size: 1.42em;
   }
-
-  .aside .wrap-logo {
-    width: 70%;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 420px) {
+  .sub-title {
+    font-size: 14px;
+  }
+
   .section-partners {
     padding-bottom: 48px;
   }
 
   .section-partners .title {
     font-size: 14px;
+    margin-bottom: 30px;
   }
 
   .section-partners .partners-list__item {
@@ -1685,5 +1689,13 @@ body.modal-open {
 
   .section-buy .title:before {
     width: 100vw;
+  }
+
+  .aside {
+    min-height: 324px;
+  }
+
+  .aside .wrap-logo {
+    margin-bottom: 40px;
   }
 }
