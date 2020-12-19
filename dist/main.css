@@ -9,6 +9,7 @@ body {
   margin: 0;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 div,
@@ -574,8 +575,8 @@ body.modal-open {
 .section-intro {
   padding-top: 6.25%;
   overflow: hidden;
-  padding-bottom: 7%;
-  min-height: 100vh;
+  height: 800px;
+  margin-bottom: 80px;
 }
 
 .section-intro .mouse-parallax {
@@ -755,7 +756,8 @@ body.modal-open {
 }
 
 .section-about {
-  padding-top: 10px;
+  padding-top: 160px;
+  padding-bottom: 40px;
 }
 
 .section-about .container {
@@ -764,7 +766,6 @@ body.modal-open {
   -webkit-background-size: auto;
   background-size: auto;
   background-position: right -69% bottom;
-  padding-bottom: 10px;
 }
 
 .section-about .title {
