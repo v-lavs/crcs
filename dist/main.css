@@ -189,30 +189,26 @@ body.modal-open {
   opacity: 0;
 }
 
-.fade-in.active {
-  animation: fadeIn ease-in 1.25s forwards .5s;
-}
-
 .scale.active {
-  animation: scale 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  animation: .5s scale .2s ease-out forwards;
 }
 
-.scale.active:nth-child(1).active {
+.scale:nth-child(1) {
   animation-delay: 0.1s;
 }
 
-.scale.active:nth-child(2).active {
+.scale:nth-child(2) {
   animation-delay: 0.3s;
 }
 
-.scale.active:nth-child(3).active {
+.scale:nth-child(3) {
   animation-delay: .5s;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-10px);
   }
 
   100% {
@@ -223,7 +219,7 @@ body.modal-open {
 
 @keyframes scale {
   0% {
-    transform: scale(0.1);
+    transform: scale(0.5);
     opacity: 0;
   }
 
@@ -774,8 +770,39 @@ body.modal-open {
 }
 
 .section-about .title {
+  position: relative;
   line-height: 1.2;
   margin-bottom: 30px;
+}
+
+.section-about .title .anim-el {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.section-about .anim-el {
+  position: relative;
+  opacity: 0;
+  z-index: 2;
+}
+
+.section-about .decor {
+  position: absolute;
+  display: block;
+  background-color: #f5f5f5;
+  bottom: -1.33em;
+  top: -.48em;
+  width: 5.1em;
+  left: -2.7em;
+  transition: transform 0.95s linear;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+.section-about .scale {
+  animation-delay: .85s;
 }
 
 .section-about .section__content {
@@ -800,23 +827,6 @@ body.modal-open {
 
 .section-about .section__text p:last-child {
   margin-bottom: 0;
-}
-
-.section-about .decor {
-  position: relative;
-  z-index: 1;
-}
-
-.section-about .decor:before {
-  position: absolute;
-  content: '';
-  display: block;
-  background-color: #f5f5f5;
-  bottom: -1.33em;
-  top: -.48em;
-  width: 5.1em;
-  left: -2.7em;
-  z-index: -1;
 }
 
 .section-about .section__thumb {
@@ -847,6 +857,14 @@ body.modal-open {
 
 .section-about .open-up {
   display: none;
+}
+
+.anim_active .anim-el {
+  animation: fadeIn linear .3s forwards .5s;
+}
+
+.anim_active .decor {
+  transform: scaleX(1);
 }
 
 .section-franchise {

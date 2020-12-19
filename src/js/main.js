@@ -145,8 +145,8 @@ $(document).ready(function () {
     //ANIMATION BLOCKS
 
     // ANIMATION
-    var fadeInBlocks = $('.fade-in').waypoint(function (direction) {
-        $(this.element).addClass('active')
+    var fadeInBlocks = $('.anim-block').waypoint(function (direction) {
+        $(this.element).addClass('anim_active')
     }, {
         offset: '85%'
     });
