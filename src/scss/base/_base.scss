@@ -12,6 +12,7 @@ body {
 
   &.modal-open {
     overflow: hidden;
+    height: 100%;
   }
 
   @include respond-to($xs) {
