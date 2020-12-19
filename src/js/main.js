@@ -102,7 +102,7 @@ $(document).ready(function () {
 
     $("#franchiseTrigger").click(function (e) {
         e.preventDefault();
-        hideHeader();
+
         $(".modal_franchise").addClass("modal_active");
         $("#overlay").fadeIn();
         $("body").addClass("modal-open");
