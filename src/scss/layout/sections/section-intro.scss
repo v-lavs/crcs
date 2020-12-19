@@ -71,16 +71,16 @@
 .anim_active {
   opacity: 1;
   .scale-up-center {
-    animation: scale-up-center .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center .75s linear both;
   }
   .rotate-bg {
-    animation: rotate-bg 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .7s both;
+    animation: rotate-bg .6s linear .6s both;
   }
   .show-title {
-    animation: show-title 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation: show-title 0.5s linear 0.5s both;
   }
   .rotate-bg_blur {
-    animation: rotate-bg_blur 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+    animation: rotate-bg_blur .6s linear .5s both;
   }
 }
 

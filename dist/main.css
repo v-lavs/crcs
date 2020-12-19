@@ -639,19 +639,19 @@ body.modal-open {
 }
 
 .anim_active .scale-up-center {
-  animation: scale-up-center 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center .75s linear both;
 }
 
 .anim_active .rotate-bg {
-  animation: rotate-bg 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
+  animation: rotate-bg .6s linear .6s both;
 }
 
 .anim_active .show-title {
-  animation: show-title 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: show-title 0.5s linear 0.5s both;
 }
 
 .anim_active .rotate-bg_blur {
-  animation: rotate-bg_blur 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: rotate-bg_blur .6s linear .5s both;
 }
 
 @keyframes scale-up-center {
