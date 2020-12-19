@@ -833,6 +833,7 @@ body.modal-open {
   position: relative;
   width: 40%;
   padding-left: 4%;
+  z-index: -1;
 }
 
 .section-about .section__thumb:before {

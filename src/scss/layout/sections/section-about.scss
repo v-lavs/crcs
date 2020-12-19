@@ -75,6 +75,7 @@ $anim_time: .95s;
     position: relative;
     width: 40%;
     padding-left: 4%;
+    z-index: -1;
 
     &:before {
       position: absolute;

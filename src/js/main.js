@@ -130,6 +130,7 @@ $(document).ready(function () {
 
     $('.btn-close').click(function () {
         $('.drawer').removeClass('open');
+        $('.header').removeClass('header_active');
         $(this).parents(".section-buy").removeClass('open-block');
     });
 
