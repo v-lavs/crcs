@@ -132,7 +132,7 @@ $anim_time: .95s;
     }
 
     .container {
-      background-size: 80%;
+      background-size: 80% 100%;
     }
   }
   @include respond-to($md) {

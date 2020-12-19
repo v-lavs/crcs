@@ -297,6 +297,7 @@ body.modal-open {
 
 .btn_phone:hover {
   background: #2C5690;
+  border-color: #2C5690;
 }
 
 .btn_phone:hover .phone {
@@ -1450,7 +1451,7 @@ body.modal-open {
   }
 
   .section-about .container {
-    background-size: 80%;
+    background-size: 80% 100%;
   }
 
   .container {
