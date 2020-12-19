@@ -577,6 +577,7 @@ body.modal-open {
   overflow: hidden;
   height: 800px;
   margin-bottom: 80px;
+  opacity: 0;
 }
 
 .section-intro .mouse-parallax {
@@ -633,6 +634,26 @@ body.modal-open {
   max-width: 660px;
 }
 
+.anim_active {
+  opacity: 1;
+}
+
+.anim_active .scale-up-center {
+  animation: scale-up-center 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.anim_active .rotate-bg {
+  animation: rotate-bg 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
+}
+
+.anim_active .show-title {
+  animation: show-title 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+.anim_active .rotate-bg_blur {
+  animation: rotate-bg_blur 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
 @keyframes scale-up-center {
   0% {
     transform: scale(0.5) rotate(0);
@@ -643,10 +664,6 @@ body.modal-open {
     transform: scale(1) rotate(-35deg);
     opacity: 1;
   }
-}
-
-.scale-up-center {
-  animation: scale-up-center 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @keyframes rotate-bg {
@@ -665,10 +682,6 @@ body.modal-open {
   }
 }
 
-.rotate-bg {
-  animation: rotate-bg 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
-}
-
 @keyframes rotate-bg_blur {
   0% {
     transform: rotate(7deg);
@@ -685,10 +698,6 @@ body.modal-open {
   }
 }
 
-.rotate-bg_blur {
-  animation: rotate-bg_blur 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
-}
-
 @keyframes show-title {
   0% {
     opacity: 0;
@@ -697,10 +706,6 @@ body.modal-open {
   100% {
     opacity: 1;
   }
-}
-
-.show-title {
-  animation: show-title 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
 }
 
 @keyframes rotate-back {

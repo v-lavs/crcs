@@ -62,6 +62,7 @@ $(document).ready(function () {
 
     smoothScrollToAnchor('.menu__link');
 
+    $('.section-intro').addClass('anim_active')
 
     //MOUSE-PARALLAX
     $('.mouse-parallax').on('mousemove', (e) => {

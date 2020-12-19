@@ -3,6 +3,7 @@
   overflow: hidden;
   height: 800px;
   margin-bottom: 80px;
+  opacity: 0;
 
   .mouse-parallax {
     position: relative;
@@ -43,10 +44,6 @@
   .mouse-parallax__content {
     padding-top: 50px;
     padding-bottom: 57px;
-    //min-height: 800px;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
   }
 
   .block-img {
@@ -71,6 +68,21 @@
   }
 }
 
+.anim_active {
+  opacity: 1;
+  .scale-up-center {
+    animation: scale-up-center .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .rotate-bg {
+    animation: rotate-bg 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .7s both;
+  }
+  .show-title {
+    animation: show-title 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+  }
+  .rotate-bg_blur {
+    animation: rotate-bg_blur 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+  }
+}
 
 @keyframes scale-up-center {
   0% {
@@ -81,10 +93,6 @@
     transform: scale(1) rotate(-35deg);
     opacity: 1;
   }
-}
-
-.scale-up-center {
-  animation: scale-up-center .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes rotate-bg {
@@ -101,10 +109,6 @@
   }
 }
 
-.rotate-bg {
-  animation: rotate-bg 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .7s both;
-}
-
 @keyframes rotate-bg_blur {
   0% {
     transform: rotate(7deg);
@@ -119,10 +123,6 @@
   }
 }
 
-.rotate-bg_blur {
-  animation: rotate-bg_blur 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
-}
-
 @keyframes show-title {
   0% {
     opacity: 0;
@@ -130,10 +130,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.show-title {
-  animation: show-title 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
 }
 
 @keyframes rotate-back {
