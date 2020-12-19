@@ -71,16 +71,16 @@
 .anim_active {
   opacity: 1;
   .scale-up-center {
-    animation: scale-up-center .75s linear both;
+    animation: scale-up-center 1s linear both;
   }
   .rotate-bg {
-    animation: rotate-bg .6s linear .6s both;
+    animation: rotate-bg .5s linear .5s both;
   }
   .show-title {
-    animation: show-title 0.5s linear 0.5s both;
+    animation: show-title 0.6s linear 0.5s both;
   }
   .rotate-bg_blur {
-    animation: rotate-bg_blur .6s linear .5s both;
+    animation: rotate-bg_blur .5s linear .5s both;
   }
 }
 

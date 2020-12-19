@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     $(window).on('load', function () {
         $('.section-intro').addClass('anim_active');
-    })
+    });
 
     //MOUSE-PARALLAX
     $('.mouse-parallax').on('mousemove', (e) => {
