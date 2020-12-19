@@ -263,7 +263,7 @@
     }
   }
   @include respond-to($xs) {
-    max-width: 440px;
+    max-width: 360px;
     .modal__body {
       justify-content: center;
     }
