@@ -193,16 +193,24 @@ body.modal-open {
   animation: .5s scale .2s ease-out forwards;
 }
 
-.scale:nth-child(1) {
-  animation-delay: 0.1s;
+.anim_active {
+  opacity: 1;
 }
 
-.scale:nth-child(2) {
-  animation-delay: 0.3s;
+.anim_active .scale-up-center {
+  animation: scale-up-center 1s linear both;
 }
 
-.scale:nth-child(3) {
-  animation-delay: .5s;
+.anim_active .rotate-bg {
+  animation: rotate-bg .5s linear .5s both;
+}
+
+.anim_active .show-title {
+  animation: show-title 0.6s linear 0.5s both;
+}
+
+.anim_active .rotate-bg_blur {
+  animation: rotate-bg_blur .5s linear .5s both;
 }
 
 @keyframes fadeIn {
@@ -219,7 +227,7 @@ body.modal-open {
 
 @keyframes scale {
   0% {
-    transform: scale(0.5);
+    transform: scale(0.6);
     opacity: 0;
   }
 
@@ -570,10 +578,10 @@ body.modal-open {
 }
 
 .section-intro {
-  padding-top: 6.25%;
+  padding-top: 100px;
   overflow: hidden;
   height: 800px;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
   opacity: 0;
 }
 
@@ -619,6 +627,10 @@ body.modal-open {
   width: 85%;
   margin: auto;
   text-align: center;
+}
+
+.section-intro .block-img .img-intro {
+  max-width: 576px;
 }
 
 .section-intro .main__title {
@@ -749,16 +761,17 @@ body.modal-open {
   }
 }
 
-.rotate-back_blur {
-  animation: rotate-back_blur .15s linear both;
+.anim-back_active .mouse-parallax__bg {
+  animation: rotate-back_blur .15s linear forwards;
 }
 
-.rotate-back {
-  animation: rotate-back .15s linear both;
+.anim-back_active .img-intro,
+.anim-back_active .mouse-parallax__bg-2 {
+  animation: rotate-back .15s linear forwards;
 }
 
 .section-about {
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 
@@ -796,7 +809,7 @@ body.modal-open {
   top: -.48em;
   width: 5.1em;
   left: -2.7em;
-  transition: transform 0.95s linear;
+  transition: transform 1s linear;
   transform-origin: 0 50%;
   transform: scaleX(0);
   z-index: -1;
@@ -1393,6 +1406,10 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 1440px) {
+  .section-about .container {
+    background-position: right -127px bottom;
+  }
+
   .section-partners .title {
     margin-bottom: 100px;
   }
@@ -1434,6 +1451,40 @@ body.modal-open {
     right: -18px;
     width: 40px;
     border-width: 2px;
+  }
+
+  .section-intro {
+    height: 700px;
+    margin-bottom: 70px;
+  }
+
+  .section-intro .main__title {
+    font-size: 58px;
+  }
+
+  .section-intro .mouse-parallax__content {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+
+  .section-intro .mouse-parallax__img {
+    height: 500px;
+  }
+
+  .section-intro .mouse-parallax__bg {
+    padding-top: 15px;
+  }
+
+  .section-intro .mouse-parallax__bg .mouse-parallax__img {
+    height: 540px;
+  }
+
+  .section-intro .block-img .img-intro {
+    max-width: 520px;
+  }
+
+  .section-about {
+    padding-top: 40px;
   }
 
   .section-about .section__thumb {
@@ -1501,6 +1552,28 @@ body.modal-open {
     right: -21px;
   }
 
+  .section-intro {
+    margin-bottom: 0;
+  }
+
+  .section-intro .main__title {
+    font-size: 48px;
+  }
+
+  .section-intro .mouse-parallax__content {
+    padding-top: 20px;
+  }
+
+  .section-intro .section-intro .mouse-parallax__bg,
+  .section-intro .section-intro .mouse-parallax__bg-2 {
+    width: 105%;
+    height: 105%;
+  }
+
+  .section-intro .block-img .img-intro {
+    max-width: 450px;
+  }
+
   .section-about .container {
     flex-wrap: wrap;
     background-size: 0;
@@ -1525,6 +1598,10 @@ body.modal-open {
 
   .section-about .section__thumb .img-about {
     width: 100%;
+  }
+
+  .section-about .decor {
+    display: none;
   }
 
   .section-partners {
@@ -1730,6 +1807,22 @@ body.modal-open {
   .modal_franchise .card-franchise:nth-of-type(5):before {
     top: 26px;
     right: -21px;
+  }
+
+  .section-intro .main__title {
+    font-size: 38px;
+  }
+
+  .section-intro .mouse-parallax__img {
+    height: 450px;
+  }
+
+  .section-intro .mouse-parallax__content {
+    padding-top: 60px;
+  }
+
+  .section-intro .block-img .img-intro {
+    max-width: 360px;
   }
 
   .section-about .section__thumb:before {
@@ -1961,6 +2054,44 @@ body.modal-open {
 
   .modal_franchise .card-franchise:nth-of-type(10):before {
     display: none;
+  }
+
+  .section-intro {
+    height: 454px;
+  }
+
+  .section-intro .main__title {
+    font-size: 30px;
+  }
+
+  .section-intro .mouse-parallax__img {
+    height: 300px;
+    top: 20px;
+  }
+
+  .section-intro .mouse-parallax__img:nth-child(1) {
+    left: -40px;
+  }
+
+  .section-intro .mouse-parallax__img:nth-child(2) {
+    right: -40px;
+  }
+
+  .section-intro .mouse-parallax__bg {
+    padding-top: 15px;
+  }
+
+  .section-intro .mouse-parallax__bg .mouse-parallax__img {
+    height: 310px;
+    right: -28%;
+  }
+
+  .section-intro .mouse-parallax__bg .mouse-parallax__img:nth-child(1) {
+    left: -28%;
+  }
+
+  .section-intro .block-img .img-intro {
+    max-width: 256px;
   }
 
   .section-about .section__content {

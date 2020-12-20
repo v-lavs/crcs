@@ -1,7 +1,9 @@
-$anim_time: .95s;
+$anim_time: 1s;
 
 .section-about {
-  padding-top: 160px;
+  //padding-top: 160px;
+
+  padding-top: 100px;
   padding-bottom: 40px;
 
   .container {
@@ -116,7 +118,15 @@ $anim_time: .95s;
       background-position: right -43% bottom;
     }
   }
+
+  @include respond-to($xl){
+    .container {
+      background-position: right -127px bottom;
+    }
+  }
+
   @include respond-to($lg) {
+    padding-top: 40px;
     .section__thumb {
       width: 50%;
       display: flex;
@@ -158,6 +168,9 @@ $anim_time: .95s;
       .img-about {
         width: 100%;
       }
+    }
+    .decor{
+      display: none;
     }
   }
   @include respond-to($sm) {

@@ -88,18 +88,21 @@ $(document).ready(function () {
         hideHeader();
         $("#popup").addClass("modal_active");
         $("#overlay").fadeIn();
-        $(".mouse-parallax__bg").addClass("rotate-back_blur");
-        $(".mouse-parallax__bg-2").addClass("rotate-back");
-        $(".img-intro").addClass("rotate-back");
+        $(".section-intro").addClass("anim-back_active");
+
+        // $(".mouse-parallax__bg").addClass("rotate-back_blur");
+        // $(".mouse-parallax__bg-2").addClass("rotate-back");
+        // $(".img-intro").addClass("rotate-back");
         $("body").addClass("modal-open");
     });
 
     $("#closePopup,  #overlay").click(function () {
         $("#popup").removeClass("modal_active");
         $("#overlay").fadeOut();
-        $(".mouse-parallax__bg").removeClass("rotate-back_blur");
-        $(".mouse-parallax__bg-2").removeClass("rotate-back");
-        $(".img-intro").removeClass("rotate-back");
+        // $(".section-intro").removeClass("anim-back_active");
+        // $(".mouse-parallax__bg").removeClass("rotate-back_blur");
+        // $(".mouse-parallax__bg-2").removeClass("rotate-back");
+        // $(".img-intro").removeClass("rotate-back");
         $("body").removeClass("modal-open");
     });
 
