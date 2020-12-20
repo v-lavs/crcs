@@ -1,4 +1,4 @@
-$anim_time: 1s;
+$anim_time: .95s;
 
 .section-about {
   //padding-top: 160px;
@@ -224,7 +224,7 @@ $anim_time: 1s;
 
 .anim_active {
   .anim-el {
-    animation: fadeIn linear .3s forwards .5s;
+    animation: fadeIn linear .3s forwards .6s;
   }
   .decor {
     transform:scaleX(1);

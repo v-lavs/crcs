@@ -89,20 +89,13 @@ $(document).ready(function () {
         $("#popup").addClass("modal_active");
         $("#overlay").fadeIn();
         $(".section-intro").addClass("anim-back_active");
-
-        // $(".mouse-parallax__bg").addClass("rotate-back_blur");
-        // $(".mouse-parallax__bg-2").addClass("rotate-back");
-        // $(".img-intro").addClass("rotate-back");
         $("body").addClass("modal-open");
     });
 
     $("#closePopup,  #overlay").click(function () {
         $("#popup").removeClass("modal_active");
         $("#overlay").fadeOut();
-        // $(".section-intro").removeClass("anim-back_active");
-        // $(".mouse-parallax__bg").removeClass("rotate-back_blur");
-        // $(".mouse-parallax__bg-2").removeClass("rotate-back");
-        // $(".img-intro").removeClass("rotate-back");
+        $(".section-intro").removeClass("anim-back_active");
         $("body").removeClass("modal-open");
     });
 
@@ -152,12 +145,12 @@ $(document).ready(function () {
     var fadeInBlocks = $('.anim-block').waypoint(function (direction) {
         $(this.element).addClass('anim_active')
     }, {
-        offset: '85%'
+        offset: '80%'
     });
 
     var scaleBlocks = $('.scale').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '85%'
+        offset: '80%'
     });
 });

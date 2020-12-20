@@ -809,7 +809,7 @@ body.modal-open {
   top: -.48em;
   width: 5.1em;
   left: -2.7em;
-  transition: transform 1s linear;
+  transition: transform 0.95s linear;
   transform-origin: 0 50%;
   transform: scaleX(0);
   z-index: -1;
@@ -875,7 +875,7 @@ body.modal-open {
 }
 
 .anim_active .anim-el {
-  animation: fadeIn linear .3s forwards .5s;
+  animation: fadeIn linear .3s forwards .6s;
 }
 
 .anim_active .decor {
