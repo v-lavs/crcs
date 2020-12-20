@@ -294,7 +294,8 @@ body.modal-open {
 .btn_phone {
   width: 52px;
   height: 52px;
-  border: 1px solid #14213D;
+  border-width: 1px;
+  border-color: #14213D;
   background-color: #ffffff;
   border-radius: 50%;
   display: flex;

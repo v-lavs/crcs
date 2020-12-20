@@ -15,7 +15,7 @@ $(document).ready(function () {
     //MOBILE MENU
     var nav = $('.header__nav');
 
-    $('.btn-burger').click(function (e) {
+    $('.btn-burger').on("click", function (e) {
         e.preventDefault();
         nav.addClass('open');
         jQuery('.backdrop').fadeIn();
@@ -89,6 +89,7 @@ $(document).ready(function () {
         $("#popup").addClass("modal_active");
         $("#overlay").fadeIn();
         $(".section-intro").addClass("anim-back_active");
+
         $("body").addClass("modal-open");
     });
 
