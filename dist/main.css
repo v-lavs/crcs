@@ -563,10 +563,12 @@ body.modal-open {
   border-bottom: 1px solid #CDCDCD;
   line-height: 1.9;
   padding: 5px 10px 5px 0;
+  font-weight: 400;
 }
 
 .form ::placeholder {
   color: #CDCDCD;
+  font-weight: 400;
 }
 
 .form .star {
@@ -582,7 +584,7 @@ body.modal-open {
   padding-top: 100px;
   overflow: hidden;
   height: 800px;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
   opacity: 0;
 }
 
@@ -625,7 +627,7 @@ body.modal-open {
 
 .section-intro .block-img {
   position: relative;
-  width: 85%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -772,7 +774,7 @@ body.modal-open {
 }
 
 .section-about {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 40px;
 }
 
@@ -822,7 +824,7 @@ body.modal-open {
 
 .section-about .section__content {
   width: 60%;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-right: 10px;
   padding-bottom: 145px;
 }
@@ -1172,7 +1174,7 @@ body.modal-open {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 64px;
-  line-height: .84;
+  line-height: .9;
   text-align: center;
   color: #FFFFFF;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
@@ -1456,7 +1458,7 @@ body.modal-open {
 
   .section-intro {
     height: 700px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .section-intro .main__title {
@@ -1485,7 +1487,7 @@ body.modal-open {
   }
 
   .section-about {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .section-about .section__thumb {
@@ -1573,6 +1575,10 @@ body.modal-open {
 
   .section-intro .block-img .img-intro {
     max-width: 450px;
+  }
+
+  .section-about {
+    padding-top: 0;
   }
 
   .section-about .container {
@@ -2108,6 +2114,25 @@ body.modal-open {
     height: 200px;
   }
 
+  .section-about .section__text {
+    padding-left: 0;
+  }
+
+  .section-about .mob-hide {
+    position: absolute;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+  }
+
+  .section-about .open-up {
+    display: block;
+    position: relative;
+    z-index: 4;
+    font-weight: 700;
+  }
+
   .section-partners {
     padding-top: 45px;
     padding-bottom: 52px;
@@ -2209,27 +2234,11 @@ body.modal-open {
 
   .section-about .section__text {
     font-size: 14px;
-    padding-left: 0;
   }
 
   .section-about .section__thumb:before {
     width: 146px;
     height: 146px;
-  }
-
-  .section-about .mob-hide {
-    position: absolute;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-  }
-
-  .section-about .open-up {
-    display: block;
-    position: relative;
-    z-index: 4;
-    font-weight: 700;
   }
 
   .section-franchise {

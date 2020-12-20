@@ -140,7 +140,6 @@ $(document).ready(function () {
         $(this).hide();
     });
 
-    //ANIMATION BLOCKS
 
     // ANIMATION
     var fadeInBlocks = $('.anim-block').waypoint(function (direction) {

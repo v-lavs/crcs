@@ -2,8 +2,8 @@
   padding-top: 100px;
   overflow: hidden;
   height: 800px;
-  //margin-bottom: 80px;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
+  //margin-bottom: 140px;
   opacity: 0;
 
   .mouse-parallax {
@@ -49,7 +49,7 @@
 
   .block-img {
     position: relative;
-    width: 85%;
+    width: 100%;
     margin: auto;
     text-align: center;
 
@@ -70,7 +70,7 @@
 
   @include respond-to($lg) {
     height: 700px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     .main__title {
       font-size: 58px;
     }
@@ -134,22 +134,7 @@
     }
   }
   @include respond-to($xs) {
-    //.main__title{
-    //  font-size: 38px;
-    //}
-    //.mouse-parallax__content {
-    //  padding-top: 20px;
-    //}
-    //
-    //.block-img {
-    //  .img-intro {
-    //    max-width: 360px;
-    //  }
-    //}
-    //}
-    //
-    //@include respond-to($xxs) {
-    height: 454px;
+     height: 454px;
     .main__title {
       font-size: 30px;
     }
