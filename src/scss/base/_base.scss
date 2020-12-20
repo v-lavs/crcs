@@ -60,7 +60,7 @@ body {
 }
 
 .simplebar-track.simplebar-vertical {
-  -webkit-box-shadow: inset 0 0 4px rgba(29, 53, 83, .4);
+  box-shadow: inset 0 0 4px rgba(29, 53, 83, .4);
   border-radius: 4px;
   width: 8px;
 }
@@ -68,7 +68,7 @@ body {
 .simplebar-scrollbar.simplebar-visible:before {
   border-radius: 4px;
   background-color: #1D3553;
-
+  opacity: 1;
   left: 0;
   right: 0;
 }

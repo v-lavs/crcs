@@ -89,7 +89,6 @@ $(document).ready(function () {
         $("#popup").addClass("modal_active");
         $("#overlay").fadeIn();
         $(".section-intro").addClass("anim-back_active");
-
         $("body").addClass("modal-open");
     });
 
