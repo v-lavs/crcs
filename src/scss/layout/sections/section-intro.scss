@@ -16,6 +16,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+    transition: .4s;
     z-index: -1;
   }
 
@@ -277,11 +278,13 @@
 
 .anim-back_active {
   .mouse-parallax__bg {
-    animation: rotate-back_blur .15s linear forwards;
+    transform: rotate(208deg)!important;
+    transition: .75s;
   }
 
   .img-intro,
   .mouse-parallax__bg-2 {
-    animation: rotate-back .15s linear forwards;
+    transform: rotate(-180deg)!important;
+    transition: .75s;
   }
 }
