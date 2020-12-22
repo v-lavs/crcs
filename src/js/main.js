@@ -22,7 +22,7 @@ $(document).ready(function () {
         $("body").addClass("modal-open");
     });
 
-    $('.btn-close, .backdrop').click(function (e) {
+    $('.btn-close, .backdrop, .menu__link').click(function (e) {
         e.preventDefault();
         nav.removeClass('open');
         jQuery('.backdrop').fadeOut();
