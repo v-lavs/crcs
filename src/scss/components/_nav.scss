@@ -37,4 +37,12 @@
       }
     }
   }
+  @include respond-to($md) {
+    .menu__link:hover,
+    .menu__link:focus{
+      &:after{
+        display: none;
+      }
+    }
+  }
 }

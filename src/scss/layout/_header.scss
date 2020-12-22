@@ -141,21 +141,10 @@
             margin-bottom: 0;
           }
         }
-
-        &__link {
-          &:hover:after {
-            display: none;
-          }
-        }
       }
     }
     .language-nav {
       justify-content: center;
-    }
-  }
-  @include respond-to($sm){
-    .btn_phone{
-
     }
   }
 }
