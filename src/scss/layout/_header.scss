@@ -22,7 +22,7 @@
   }
 
   &.header_active {
-    top: -120px;
+    transform:translateY(-120px);
   }
 
   .container {
